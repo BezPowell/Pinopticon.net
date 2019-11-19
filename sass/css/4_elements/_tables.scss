@@ -1,0 +1,22 @@
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: $base-line-height / 2;
+  line-height: calc(#{$base-line-height} - 1px);
+  border: 1px solid;
+}
+
+tbody tr:first-of-type {
+  th, td {
+    padding-top: calc(#{$base-line-height / 2} - 1px);
+  }
+}
+
+tbody tr:last-of-type {
+  th, td {
+    padding-bottom: calc(#{$base-line-height / 2} - 1px);
+  }
+}

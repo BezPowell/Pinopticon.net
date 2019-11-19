@@ -1,0 +1,89 @@
+@include fontFace(
+  $fontFamily: 'Muli',
+  $src: '../fonts/Muli/static/',
+  $fonts: (
+    300: (
+      normal: "Muli-Light",
+      italic: "Muli-LightItalic",
+    ),
+    400: (
+      normal: "Muli-Regular",
+      italic: "Muli-Italic",
+    ),
+    700: (
+      normal: "Muli-Bold",
+      italic: "Muli-BoldItalic",
+    )
+  ),
+  $display: optional
+);
+
+@include fontFace(
+  $fontFamily: 'Lato',
+  $src: '../fonts/Lato/',
+  $fonts: (
+    400: (
+      normal: "Lato-Regular",
+      italic: "Lato-Italic",
+    )
+  ),
+  $display: optional
+);
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--text-colour);
+
+    @include type-setting(0);
+}
+
+main {
+  // Demonstrate the vertical rhythm at 12px
+  background-image: linear-gradient(#eee 1px, transparent 1px);
+  background-size: 100% $base-line-height;
+}
+
+p {
+  @include type-setting(0);
+  margin: $base-line-height 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: $base-line-height;
+  margin-bottom: $base-line-height;
+
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  @include type-setting(6);
+}
+
+h2 {
+  @include type-setting(5);
+}
+
+h3 {
+  @include type-setting(4);
+}
+
+h4 {
+  @include type-setting(3);
+}
+
+h5 {
+  @include type-setting(2);
+}
+
+h6 {
+  @include type-setting(1);
+}
+
+small {
+  @include type-setting(-1);
+}
+
+code {
+  line-height: 0;
+}
