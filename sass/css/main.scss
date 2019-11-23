@@ -4,9 +4,9 @@
  * Constants (sass variables) for other layers.
  *
 */
-@import "1_settings/colours";
-@import "1_settings/breakpoints";
-@import "1_settings/type";
+@import "../source/1_settings/colours";
+@import "../source/1_settings/breakpoints";
+@import "../source/1_settings/type";
 
 /*
  * -- Tools --
@@ -14,8 +14,8 @@
  * Mixins Extends etc.
  *
 */
-@import "2_tools/helpers";
-@import "2_tools/mixins";
+@import "../source/2_tools/helpers";
+@import "../source/2_tools/mixins";
 
 /*
  * -- Generic --
@@ -23,9 +23,9 @@
  * Normalize and Resets
  *
 */
-@import "3_generic/normalize";
-@import "3_generic/box-sizing";
-@import "3_generic/variables";
+@import "../source/3_generic/normalize";
+@import "../source/3_generic/box-sizing";
+@import "../source/3_generic/variables";
 
 /*
  * -- Elements --
@@ -33,12 +33,12 @@
  * Base HTML Elements before classes and more specific overrides.
  *
 */
-@import "4_elements/typography";
-@import "4_elements/links";
-@import "4_elements/lists";
-@import "4_elements/forms";
-@import "4_elements/tables";
-@import "4_elements/quotes";
+@import "../source/4_elements/typography";
+@import "../source/4_elements/links";
+@import "../source/4_elements/lists";
+@import "../source/4_elements/forms";
+@import "../source/4_elements/tables";
+@import "../source/4_elements/quotes";
 
 /*
  * -- Objects --
@@ -46,10 +46,10 @@
  * Container styles and page layout.
  *
 */
-@import "5_objects/page";
-@import "5_objects/a11y";
-@import "5_objects/header";
-@import "5_objects/footer";
+@import "../source/5_objects/page";
+@import "../source/5_objects/a11y";
+@import "../source/5_objects/header";
+@import "../source/5_objects/footer";
 
 /*
  * -- Components --
@@ -57,7 +57,7 @@
  * Reusable components - e.g. Accordions, CTA's etc.
  *
 */
-@import "6_components/navigation";
+@import "../source/6_components/navigation";
 
 /*
  * -- Trumps --

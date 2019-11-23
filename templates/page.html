@@ -13,7 +13,7 @@
 <body class="page">
   <header class="site-header">
     <div class="site-branding">
-      <h1 class="site-title">{{ config.title }}</h1>
+      <h1 class="site-title">{{ page.title }}</h1>
       <p class="site-description"><a href="/" rel="home">Pinopticon.net</a></p>
     </div>
     {% if page.extra.banner %}
@@ -39,6 +39,11 @@
       </ul>
     </div>
   </nav>
+  <main class="site-content">
+    {{page.content | safe}}
+  </main>
+  <footer class="site-footer">
+  </footer>
 </body>
 
 </html>

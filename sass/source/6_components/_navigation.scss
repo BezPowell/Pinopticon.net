@@ -1,4 +1,4 @@
-.main-navigation {
+.site-navigation {
     position: sticky;
     top: 0;
 
@@ -9,6 +9,8 @@
     color: var(--text-colour);
 
     @media screen and (hover: hover) and (min-width: $breakpoint-large) {
+        @include position($position: absolute, $top: $base-line-height, $right: 0, $left: 0);
+
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -35,7 +37,7 @@
     }
 }
 
-.main-navigation.toggled .main-menu-container {
+.site-navigation.toggled .main-menu-container {
     transform: translateX(0%);
 }
 
@@ -43,7 +45,7 @@
     @include noList();
 
     @media screen and (hover: hover) and (min-width: $breakpoint-large) {
-        @include displayFlex();
+        @include displayFlex($justify: end);
     }
 }
 
@@ -54,7 +56,7 @@
 
     @media screen and (hover: hover) and (min-width: $breakpoint-large) {
         @include position(absolute, $top: 100%, $left: 0, $right: 0);
-        @include displayFlex();
+        @include displayFlex($justify: end);
 
         background: var(--background-colour);
 
@@ -63,7 +65,7 @@
     }
 }
 
-    .main-navigation .menu-item:hover .sub-menu, .main-navigation .menu-item:focus-within .sub-menu {
+    .site-navigation .menu-item:hover .sub-menu, .site-navigation .menu-item:focus-within .sub-menu {
         @media screen and (hover: hover) and (min-width: $breakpoint-large) {
             visibility: visible;
             opacity: 1;
@@ -71,7 +73,7 @@
     }
 
 
-.main-navigation .menu-item > a {
+.site-navigation .menu-item > a {
     display: block;
     padding: $base-line-height /2 $base-line-height;
     text-decoration: none;
