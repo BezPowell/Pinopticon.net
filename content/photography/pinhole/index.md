@@ -27,23 +27,23 @@ banner = "/uploads/2019/03/pinhole_banner.jpg"
   </p>
 </div>
 
-<ul class="wp-block-gallery columns-3 is-cropped">
-  <li class="blocks-gallery-item">
+<ul class="gallery">
+  <li class="gallery-item">
     <figure><a href="https://i0.wp.com/pinopticon.net/wp-content/uploads/2019/03/high_res001_clean.jpg?fit=640%2C474&ssl=1"><img src="https://i0.wp.com/pinopticon.net/wp-content/uploads/2019/03/high_res001_clean.jpg?fit=640%2C474&ssl=1" alt="" data-id="61" data-link="https://pinopticon.net/?attachment_id=61" class="wp-image-61" srcset="https://pinopticon.net/wp-content/uploads/2019/03/high_res001_clean.jpg 1459w, https://pinopticon.net/wp-content/uploads/2019/03/high_res001_clean-300x222.jpg 300w, https://pinopticon.net/wp-content/uploads/2019/03/high_res001_clean-768x568.jpg 768w, https://pinopticon.net/wp-content/uploads/2019/03/high_res001_clean-1024x758.jpg 1024w" sizes="(max-width: 1459px) 100vw, 1459px" /></a></figure>
   </li>
-  <li class="blocks-gallery-item">
+  <li class="gallery-item">
     <figure><a href="https://i1.wp.com/pinopticon.net/wp-content/uploads/2019/03/high_res002_clean.jpg?fit=640%2C514&ssl=1"><img src="https://i1.wp.com/pinopticon.net/wp-content/uploads/2019/03/high_res002_clean.jpg?fit=640%2C514&ssl=1" alt="" data-id="62" data-link="https://pinopticon.net/?attachment_id=62" class="wp-image-62" srcset="https://pinopticon.net/wp-content/uploads/2019/03/high_res002_clean.jpg 1345w, https://pinopticon.net/wp-content/uploads/2019/03/high_res002_clean-300x241.jpg 300w, https://pinopticon.net/wp-content/uploads/2019/03/high_res002_clean-768x617.jpg 768w, https://pinopticon.net/wp-content/uploads/2019/03/high_res002_clean-1024x822.jpg 1024w" sizes="(max-width: 1345px) 100vw, 1345px" /></a></figure>
   </li>
-  <li class="blocks-gallery-item">
+  <li class="gallery-item">
     <figure><a href="https://i1.wp.com/pinopticon.net/wp-content/uploads/2019/03/high_res004_clean.jpg?fit=640%2C521&ssl=1"><img src="https://i1.wp.com/pinopticon.net/wp-content/uploads/2019/03/high_res004_clean.jpg?fit=640%2C521&ssl=1" alt="" data-id="63" data-link="https://pinopticon.net/?attachment_id=63" class="wp-image-63" srcset="https://pinopticon.net/wp-content/uploads/2019/03/high_res004_clean.jpg 1326w, https://pinopticon.net/wp-content/uploads/2019/03/high_res004_clean-300x244.jpg 300w, https://pinopticon.net/wp-content/uploads/2019/03/high_res004_clean-768x626.jpg 768w, https://pinopticon.net/wp-content/uploads/2019/03/high_res004_clean-1024x834.jpg 1024w" sizes="(max-width: 1326px) 100vw, 1326px" /></a></figure>
   </li>
-  <li class="blocks-gallery-item">
+  <li class="gallery-item">
     <figure><a href="https://i2.wp.com/pinopticon.net/wp-content/uploads/2019/03/high_res2001_clean.jpg?fit=640%2C461&ssl=1"><img src="https://i2.wp.com/pinopticon.net/wp-content/uploads/2019/03/high_res2001_clean.jpg?fit=640%2C461&ssl=1" alt="" data-id="64" data-link="https://pinopticon.net/?attachment_id=64" class="wp-image-64" srcset="https://pinopticon.net/wp-content/uploads/2019/03/high_res2001_clean.jpg 1500w, https://pinopticon.net/wp-content/uploads/2019/03/high_res2001_clean-300x216.jpg 300w, https://pinopticon.net/wp-content/uploads/2019/03/high_res2001_clean-768x553.jpg 768w, https://pinopticon.net/wp-content/uploads/2019/03/high_res2001_clean-1024x737.jpg 1024w" sizes="(max-width: 1500px) 100vw, 1500px" /></a></figure>
   </li>
-  <li class="blocks-gallery-item">
+  <li class="gallery-item">
     <figure><a href="https://i1.wp.com/pinopticon.net/wp-content/uploads/2019/03/high_res2002_clean.jpg?fit=640%2C488&ssl=1"><img src="https://i1.wp.com/pinopticon.net/wp-content/uploads/2019/03/high_res2002_clean.jpg?fit=640%2C488&ssl=1" alt="" data-id="65" data-link="https://pinopticon.net/?attachment_id=65" class="wp-image-65" srcset="https://pinopticon.net/wp-content/uploads/2019/03/high_res2002_clean.jpg 1416w, https://pinopticon.net/wp-content/uploads/2019/03/high_res2002_clean-300x229.jpg 300w, https://pinopticon.net/wp-content/uploads/2019/03/high_res2002_clean-768x586.jpg 768w, https://pinopticon.net/wp-content/uploads/2019/03/high_res2002_clean-1024x781.jpg 1024w" sizes="(max-width: 1416px) 100vw, 1416px" /></a></figure>
   </li>
-  <li class="blocks-gallery-item">
+  <li class="gallery-item">
     <figure><a href="https://i0.wp.com/pinopticon.net/wp-content/uploads/2019/03/high_res2003_clean.jpg?fit=640%2C519&ssl=1"><img src="https://i0.wp.com/pinopticon.net/wp-content/uploads/2019/03/high_res2003_clean.jpg?fit=640%2C519&ssl=1" alt="" data-id="66" data-link="https://pinopticon.net/?attachment_id=66" class="wp-image-66" srcset="https://pinopticon.net/wp-content/uploads/2019/03/high_res2003_clean.jpg 1331w, https://pinopticon.net/wp-content/uploads/2019/03/high_res2003_clean-300x243.jpg 300w, https://pinopticon.net/wp-content/uploads/2019/03/high_res2003_clean-768x623.jpg 768w, https://pinopticon.net/wp-content/uploads/2019/03/high_res2003_clean-1024x831.jpg 1024w" sizes="(max-width: 1331px) 100vw, 1331px" /></a></figure>
   </li>
 </ul>

@@ -13,11 +13,11 @@
 <body class="page">
   <header class="site-header">
     <div class="site-branding">
-      <h1 class="site-title">{{ config.title }}</h1>
-      <p class="site-description"><a href="/" rel="home">Pinopticon.net</a></p>
+      <h1 class="site-title">{{ section.title }}</h1>
+      <p class="site-description">{{ section.description }}</p>
     </div>
-    {% if page.extra.banner %}
-    <img src="{{ get_url(path=page.extra.banner) }}" alt="" class="banner" />
+    {% if section.extra.banner %}
+    <img src="{{ get_url(path=section.extra.banner) }}" alt="" class="banner" />
     {% endif %}
   </header>
   <nav class="site-navigation">

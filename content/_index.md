@@ -1,5 +1,6 @@
 +++
-title = "Home"
+title = "Pinopticon.net"
+description = "Photography & Philosophy from Berwyn Powell"
 date = 2019-03-09
 
 # Custom data

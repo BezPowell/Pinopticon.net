@@ -44,6 +44,8 @@
 .main-menu {
     @include noList();
 
+    margin: 0;
+
     @media screen and (hover: hover) and (min-width: $breakpoint-large) {
         @include displayFlex($justify: end);
     }

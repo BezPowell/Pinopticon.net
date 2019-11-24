@@ -1,0 +1,25 @@
+.gallery {
+  @include noList();
+  @include displayFlex(row wrap);
+
+  margin: #{$base-line-height / 2} -#{$base-line-height / 2};
+}
+
+.gallery-item {
+  flex: 1 1 350px;
+  margin: #{$base-line-height / 2};
+}
+
+.gallery-item figure {
+  margin: 0;
+  height: 100%
+}
+
+.gallery-item img, .gallery-item a {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
