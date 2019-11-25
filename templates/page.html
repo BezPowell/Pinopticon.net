@@ -1,50 +1,23 @@
-<!doctype html>
-<html lang="en">
+{% extends "index.html" %}
+{% block branding %}
+  <h1 class="site-title">{{ page.title }}</h1>
+  <p class="site-description"><a href="/" rel="home">Pinopticon.net</a></p>
+{% endblock branding %}
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+{% block banner %}
+  {% if page.extra.banner %}
+  <img src="{{ get_url(path=page.extra.banner) }}" alt="" class="banner" />
+  {% endif %}
+{% endblock banner %}
 
-  <link rel="stylesheet" href="{{ get_url(path='css/main.css') }}" />
-
-  <title>{{ config.title }}</title>
-</head>
-
-<body class="page">
-  <header class="site-header">
-    <div class="site-branding">
-      <h1 class="site-title">{{ page.title }}</h1>
-      <p class="site-description"><a href="/" rel="home">Pinopticon.net</a></p>
-    </div>
-    {% if page.extra.banner %}
-    <img src="{{ get_url(path=page.extra.banner) }}" alt="" class="banner" />
-    {% endif %}
-  </header>
-  <nav class="site-navigation">
-    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
-    <div class="main-menu-container">
-      <ul id="primary-menu" class="main-menu" aria-expanded="false">
-        <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-15 current_page_item menu-item-20"><a href="/" aria-current="page">Home</a></li>
-        <li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="/blog/">Blog</a></li>
-        <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-32"><a href="/photography/">Photography</a>
-          <ul class="sub-menu">
-            <li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="/photography/a-portrait-of-the-sky/">A Portrait of the Sky</a></li>
-            <li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a href="/photography/pinhole/">Pinhole</a></li>
-            <li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="/photography/hwt/">HWT</a></li>
-            <li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="/photography/unnatural-landscapes/">Unnatural Landscapes</a></li>
-          </ul>
-        </li>
-        <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="/philosophy/">Philosophy</a></li>
-        <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="/contact/">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+{% block content %}
   <main class="site-content">
     {{page.content | safe}}
   </main>
+{% endblock content %}
+
+{% block footer %}
   <footer class="site-footer">
     <p>Pinopticon.net &#169;Berwyn Powell</p>
   </footer>
-</body>
-
-</html>
+{% endblock footer %}

@@ -13,12 +13,16 @@
 <body class="page">
   <header class="site-header">
     <div class="site-branding">
-      <h1 class="site-title">{{ section.title }}</h1>
-      <p class="site-description">{{ section.description }}</p>
+      {% block branding %}
+        <h1 class="site-title">{{ section.title }}</h1>
+        <p class="site-description">{{ section.description }}</p>
+      {% endblock branding %}
     </div>
-    {% if section.extra.banner %}
-    <img src="{{ get_url(path=section.extra.banner) }}" alt="" class="banner" />
-    {% endif %}
+    {% block banner %}
+      {% if section.extra.banner %}
+      <img src="{{ get_url(path=section.extra.banner) }}" alt="" class="banner" />
+      {% endif %}
+    {% endblock banner %}
   </header>
   <nav class="site-navigation">
     <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
@@ -39,6 +43,12 @@
       </ul>
     </div>
   </nav>
+  {% block content %}
+  {% endblock content %}
+  {% block sidebar %}
+  {% endblock sidebar %}
+  {% block footer %}
+  {% endblock footer %}
 </body>
 
 </html>
