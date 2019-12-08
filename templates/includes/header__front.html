@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="site-branding">
+    {% if section.title %}
+      <h1 class="site-title">{{ section.title }}</h1>
+    {% endif %}
+    {% if section.description %}
+      <p class="site-description">{{ section.description }}</p>
+    {% endif %}
+  </div>
+  {% if section.extra.banner %}
+    <img src="{{ get_url(path=section.extra.banner) }}" alt="" class="banner" />
+  {% endif %}
+</header>

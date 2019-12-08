@@ -1,20 +1,6 @@
-{% extends "index.html" %}
-{% block branding %}
-  <h1 class="site-title">{{ section.title }}</h1>
-  <p class="site-description"><a href="/" rel="home">Pinopticon.net</a></p>
-{% endblock branding %}
-
-{% block content %}
-  <main class="site-content">
-    {% for post in section.pages %}
-      <article class="post">
-        <header>
-          <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
-          <div class="meta">
-            <span>Posted on {{ post.date }}</span
-          </div>
-        </header>
-      </article>
-    {% endfor %}
-  </main>
-{% endblock content %}
+{% include "includes/html_head.html" %}
+{% include "includes/header.html" %}
+{% include "includes/nav.html" %}
+{% include "includes/content__section.html" %}
+{% include "includes/footer.html" %}
+{% include "includes/html_scripts.html" %}

@@ -1,23 +1,6 @@
-{% extends "index.html" %}
-{% block branding %}
-  <h1 class="site-title">{{ page.title }}</h1>
-  <p class="site-description"><a href="/" rel="home">Pinopticon.net</a></p>
-{% endblock branding %}
-
-{% block banner %}
-  {% if page.extra.banner %}
-  <img src="{{ get_url(path=page.extra.banner) }}" alt="" class="banner" />
-  {% endif %}
-{% endblock banner %}
-
-{% block content %}
-  <main class="site-content">
-    {{page.content | safe}}
-  </main>
-{% endblock content %}
-
-{% block footer %}
-  <footer class="site-footer">
-    <p>Pinopticon.net &#169;Berwyn Powell</p>
-  </footer>
-{% endblock footer %}
+{% include "includes/html_head.html" %}
+{% include "includes/header.html" %}
+{% include "includes/nav.html" %}
+{% include "includes/content__page.html" %}
+{% include "includes/footer.html" %}
+{% include "includes/html_scripts.html" %}
