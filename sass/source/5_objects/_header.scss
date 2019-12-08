@@ -17,7 +17,7 @@
   @media screen and (min-width: $breakpoint-large) {
     top: unset;
     bottom: 0;
-    left: $base-line-height;
+    left: $base-line-height * 2;
 
     width: 100vh;
 

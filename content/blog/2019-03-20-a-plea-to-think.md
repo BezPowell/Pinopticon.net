@@ -1,8 +1,12 @@
 +++
 title = "A plea to think"
 date = 2019-03-20
+template = "post.html"
 [taxonomies]
 categories = ["Uncategorised"]
+[extra]
+author = "Berwyn"
+class = "post"
 +++
 <div class="text-block">
   <blockquote>

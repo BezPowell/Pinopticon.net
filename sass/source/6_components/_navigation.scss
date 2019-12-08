@@ -9,7 +9,7 @@
     color: var(--text-colour);
 
     @media screen and (hover: hover) and (min-width: $breakpoint-large) {
-        @include position($position: absolute, $top: $base-line-height, $right: 0, $left: 0);
+        @include position($position: absolute, $top: $base-line-height * 2, $right: 0, $left: 0);
 
         padding-top: 0;
         padding-bottom: 0;

@@ -50,11 +50,10 @@ body {
   @media screen and (hover: hover) and (min-width: $breakpoint-large) {
     grid-template-areas:
     "header header"
-    "nav nav"
     "main sidebar"
     "footer footer";
     grid-template-columns: 1fr 40ch;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: 100vh 1fr auto;
   };
 }
 

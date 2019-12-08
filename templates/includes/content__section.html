@@ -2,7 +2,7 @@
   {% for post in section.pages %}
     <article class="post">
       <header>
-        <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+        <h2 class="post-title"><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
         <div class="meta">
           <span>Posted on <time class="entry-date published" datetime="{{ post.date }}">{{ post.date }}</time></span>
           {% if page.taxonomies.authors %}

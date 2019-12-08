@@ -9,5 +9,7 @@
   </div>
   {% if section.extra.banner %}
     <img src="{{ get_url(path=section.extra.banner) }}" alt="" class="banner" />
+  {% else %}
+    <img src="{{ get_url(path="img/banner.jpg") }}" alt="" class="banner" />
   {% endif %}
 </header>

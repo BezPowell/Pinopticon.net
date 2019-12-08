@@ -2,8 +2,12 @@
 title = "Politics Has Never Worked"
 date = 2019-03-29
 description = "While I was studying at college I began working on a short pamphlet to hopefully highlight to my colleagues that just because society is organised in a particular way at the moment, does not mean that it is the best way for it to continue to be organised in the future. While I never came anywhere near to completed it before I finished my studies, I have been working on it on and off ever since and am now pushing it up to the web in the hope that it may be of use to someone. I do firmly believe that if we want to survive the next century or so, we are going to have to radically rethink the way in which we make our decisions and relate to one another."
+template = "post.html"
 [taxonomies]
 categories = ["Philosophy"]
+[extra]
+author = "Berwyn"
+class = "post"
 +++
 <div class="text-block">
   <p>
