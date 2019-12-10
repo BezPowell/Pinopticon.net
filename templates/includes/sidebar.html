@@ -1,4 +1,4 @@
-//Set archive to either content in case of section, or direct ancestor in case of post
+{# Set archive to either content in case of section, or direct ancestor in case of post #}
 {% if page.ancestors %}
   {% set parent = page.ancestors | last %}
   {% set archive = get_section(path=parent) %}
