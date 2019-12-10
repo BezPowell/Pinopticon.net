@@ -1,32 +1,24 @@
 <main class="site-content">
-  {% for post in section.pages %}
+  {% for post in section.pages | reverse %}
     <article class="post">
       <header>
         <h2 class="post-title"><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
-        <div class="meta">
+        <p class="meta">
           <span>Posted on <time class="entry-date published" datetime="{{ post.date }}">{{ post.date }}</time></span>
-          {% if page.taxonomies.authors %}
-          by
-          {% for author in page.taxonomies.authors %}
-          <a href="{{ get_taxonomy_url(kind="authors", name=author) | safe }}">
-              <span class="tag is-primary">{{ author }} </span>
-          </a>
-          {% if page.taxonomies.authors | length > 1 %}
-          {% if loop.index != page.taxonomies.authors | length %}
-          {% if loop.index == page.taxonomies.authors | length - 1 %}
-          and
-          {% else %}
-          ,
+          {% if post.taxonomies.categories %}
+            in
+            {% for category in post.taxonomies.categories %}
+              <a href="{{ get_taxonomy_url(kind="categories", name=category) | safe }}">
+                {{ category }}
+              </a>
+            {% endfor %}
           {% endif %}
-          {% endif %}
-          {% endif %}
-          {% endfor %}
-          {% endif %}
-        </div>
+        </p>
       </header>
       {% if post.description %}
       <div class="excerpt">
         <p>{{ post.description }}</p>
+        <p><a href="{{ post.permalink }}">Continue Reading</a></p>
       </div>
     </article>
     {% endif %}

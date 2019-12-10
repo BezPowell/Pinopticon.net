@@ -5,7 +5,6 @@ template = "post.html"
 [taxonomies]
 categories = ["Philosophy"]
 [extra]
-author = "Berwyn"
 class = "post"
 +++
 <blockquote class="wp-block-quote">

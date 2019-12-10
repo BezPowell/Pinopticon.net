@@ -6,7 +6,6 @@ template = "post.html"
 [taxonomies]
 categories = ["Philosophy"]
 [extra]
-author = "Berwyn"
 class = "post"
 +++
 <div class="text-block">

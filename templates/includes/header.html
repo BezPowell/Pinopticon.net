@@ -1,16 +1,18 @@
+//Setup this value independent of whether page or section
+{% if page %}
+  {% set this = page %}
+{% elif section %}
+  {% set this = section %}
+{% endif %}
 <header class="site-header">
   <div class="site-branding">
-    {% if page.title %}
-      <h1 class="site-title">{{ page.title }}</h1>
-    {% elif section.title %}
-      <h1 class="site-title">{{ section.title }}</h1>
+    {% if this.title %}
+      <h1 class="site-title">{{ this.title }}</h1>
     {% endif %}
       <p class="site-description"><a href="/" rel="home">Pinopticon.net</a></p>
   </div>
-  {% if page.extra.banner %}
-    <img src="{{ get_url(path=page.extra.banner) }}" alt="" class="banner" />
-  {% elif section.extra.banner %}
-    <img src="{{ get_url(path=section.extra.banner) }}" alt="" class="banner" />
+  {% if this.extra.banner %}
+    <img src="{{ get_url(path=this.extra.banner) }}" alt="" class="banner" />
   {% else %}
     <img src="{{ get_url(path="img/banner.jpg") }}" alt="" class="banner" />
   {% endif %}
