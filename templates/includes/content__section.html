@@ -1,5 +1,5 @@
 <main class="site-content">
-  {% for post in section.pages | reverse %}
+  {% for post in section.pages | sort(attribute="date") | reverse %}
     <article class="post">
       <header>
         <h2 class="post-title"><a href="{{ post.permalink }}">{{ post.title }}</a></h2>

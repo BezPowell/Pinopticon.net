@@ -5,7 +5,7 @@ date = 2019-03-16
 # Custom data
 [extra]
 author = "Berwyn"
-banner = "/uploads/2019/03/corcus_banner.jpg"
+banner = "/img/banners/crocus_banner.jpg"
 +++
 <ul class="wp-block-gallery columns-3 is-cropped">
   <li class="blocks-gallery-item">

@@ -9,7 +9,7 @@
   {% if archive.pages %}
     <h2>Recent Posts</h2>
     <ul>
-      {% for post in archive.pages | reverse %}
+      {% for post in archive.pages | sort(attribute="date") | reverse %}
         {% if loop.index > 4 %}{% break %}{% endif %}
         <li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
       {% endfor %}

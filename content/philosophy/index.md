@@ -5,7 +5,7 @@ date = 2019-03-09
 # Custom data
 [extra]
 author = "Berwyn"
-banner = "/uploads/2019/03/berry_banner.jpg"
+banner = "/img/banners/berry_banner.jpg"
 +++
 <div class="text-block">
   <p>

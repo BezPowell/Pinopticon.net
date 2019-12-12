@@ -1,18 +1,18 @@
 @include fontFace(
   $fontFamily: 'Muli',
-  $src: '../fonts/Muli/static/',
+  $src: '../fonts/Muli/',
   $fonts: (
     300: (
-      normal: "Muli-Light",
-      italic: "Muli-LightItalic",
+      normal: "muli-v19-latin-300",
+      italic: "muli-v19-latin-300italic",
     ),
     400: (
-      normal: "Muli-Regular",
-      italic: "Muli-Italic",
+      normal: "muli-v19-latin-regular",
+      italic: "muli-v19-latin-italic",
     ),
     700: (
-      normal: "Muli-Bold",
-      italic: "Muli-BoldItalic",
+      normal: "muli-v19-latin-700",
+      italic: "muli-v19-latin-700italic",
     )
   ),
   $display: optional
@@ -23,8 +23,8 @@
   $src: '../fonts/Lato/',
   $fonts: (
     400: (
-      normal: "Lato-Regular",
-      italic: "Lato-Italic",
+      normal: "lato-v16-latin-regular",
+      italic: "lato-v16-latin-italic",
     )
   ),
   $display: optional
