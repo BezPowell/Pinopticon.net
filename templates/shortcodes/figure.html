@@ -1,0 +1,11 @@
+{% set path = get_url(path=url) %}
+<figure>
+  <a href="{{ url }}">
+    <img src="{{ resize_image(path=path, width=900, height=600) }}" alt="{{ alt }}" />
+  </a>
+  {% if body %}
+    <figcaption>
+      {{ body }}
+    </figcaption>
+  {% endif %}
+</figure>

@@ -17,7 +17,7 @@ banner = "/img/banners/berry_banner.jpg"
   </p>
 
   <p>
-    To download my ‘Enquiry Concerning Social Organisation’ please use the links here for <a rel="noreferrer noopener" aria-label="pdf (opens in a new tab)" href="https://pinopticon.net/wp-content/uploads/2019/03/An-Enquiry.pdf" target="_blank">pdf</a>, <a rel="noreferrer noopener" aria-label="pdf (opens in a new tab)" href="https://pinopticon.net/wp-content/uploads/2019/04/An-Enquiry.mobi" target="_blank">mobi</a> and <a href="https://pinopticon.net/wp-content/uploads/2019/03/An-Enquiry.epub">epub</a> versions of the book. Any feedback you have would be most welcome and can be given via the contact page.
+    To download my ‘Enquiry Concerning Social Organisation’ please use the links here for <a rel="noreferrer noopener" aria-label="pdf (opens in a new tab)" href="/docs/An-Enquiry.pdf" target="_blank">pdf</a>, <a rel="noreferrer noopener" aria-label="pdf (opens in a new tab)" href="/docs/An-Enquiry.mobi" target="_blank">mobi</a> and <a href="/docs/An-Enquiry.epub">epub</a> versions of the book. Any feedback you have would be most welcome and can be given via the contact page.
   </p>
 
   <p>
@@ -29,9 +29,9 @@ banner = "/img/banners/berry_banner.jpg"
 
 <ul class="wp-block-latest-posts">
   <li>
-    <a href="https://pinopticon.net/2019/03/29/politics-has-never-worked/">Politics Has Never Worked</a>
+    <a href="/blog/politics-has-never-worked">Politics Has Never Worked</a>
   </li>
   <li>
-    <a href="https://pinopticon.net/2019/03/09/censorship-and-staying-safe-online/">Censorship and Staying Safe Online</a>
+    <a href="/blog/censorship-and-staying-safe-online">Censorship and Staying Safe Online</a>
   </li>
 </ul>

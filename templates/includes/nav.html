@@ -1,19 +1,32 @@
+{# Setup this value independent of whether page or section #}
+{% if page %}
+  {% set this = page %}
+{% elif section %}
+  {% set this = section %}
+{% endif %}
+{% set active = "" %}
+{# get root node to generate menu #}
+{% set root = get_section(path="_index.md") %}
 <nav class="site-navigation">
   <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
   <div class="main-menu-container">
     <ul id="primary-menu" class="main-menu" aria-expanded="false">
-      <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-15 current_page_item menu-item-20"><a href="/" aria-current="page">Home</a></li>
-      <li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="/blog/">Blog</a></li>
-      <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-32"><a href="/photography/">Photography</a>
-        <ul class="sub-menu">
-          <li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="/photography/a-portrait-of-the-sky/">A Portrait of the Sky</a></li>
-          <li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a href="/photography/pinhole/">Pinhole</a></li>
-          <li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="/photography/hwt/">HWT</a></li>
-          <li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="/photography/unnatural-landscapes/">Unnatural Landscapes</a></li>
-        </ul>
+      <li class="menu-item">
+        <a href="/">Home</a>
       </li>
-      <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="/philosophy/">Philosophy</a></li>
-      <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="/contact/">Contact</a></li>
+      {% for section in root.subsections %}
+        {% set item = get_section(path=section, metadata_only=true) %}
+        {% if this.permalink == item.permalink %}{% set active = " active" %}{% endif %}
+        <li class="menu-item{{ active }}">
+          <a href="{{ item.permalink }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+      {% for page in root.pages %}
+        {% if this.permalink == page.permalink %}{% set active = " active" %}{% endif %}
+        <li class="menu-item{{ active }}">
+          <a href="{{ page.permalink }}">{{ page.title }}</a>
+        </li>
+      {% endfor %}
     </ul>
   </div>
 </nav>

@@ -27,47 +27,4 @@ banner = "/img/banners/pinhole_banner.jpg"
   </p>
 </div>
 
-<ul class="gallery">
-  <li class="gallery-item">
-    <figure>
-      <a href="high_res001_clean.jpg">
-        <img src="high_res001_clean.jpg" alt="" />
-      </a>
-    </figure>
-  </li>
-  <li class="gallery-item">
-    <figure>
-      <a href="high_res002_clean.jpg">
-        <img src="high_res002_clean.jpg" alt="" />
-      </a>
-    </figure>
-  </li>
-  <li class="gallery-item">
-    <figure>
-      <a href="high_res004_clean.jpg">
-        <img src="high_res004_clean.jpg" alt="" />
-      </a>
-    </figure>
-  </li>
-  <li class="gallery-item">
-    <figure>
-      <a href="high_res2001_clean.jpg">
-        <img src="high_res2001_clean.jpg" alt="" />
-      </a>
-    </figure>
-  </li>
-  <li class="gallery-item">
-    <figure>
-      <a href="high_res2002_clean.jpg">
-        <img src="high_res2002_clean.jpg" alt="" />
-      </a>
-    </figure>
-  </li>
-  <li class="gallery-item">
-    <figure>
-      <a href="high_res2003_clean.jpg">
-        <img src="high_res2003_clean.jpg" alt="" />
-      </a>
-    </figure>
-  </li>
-</ul>
+{{ gallery() }}
