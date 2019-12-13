@@ -8,8 +8,10 @@
     {% endif %}
   </div>
   {% if section.extra.banner %}
-    <img src="{{ get_url(path=section.extra.banner) }}" alt="" class="banner" />
+    {% set banner = "../static" ~ section.extra.banner %}
   {% else %}
-    <img src="{{ get_url(path="img/banner.jpg") }}" alt="" class="banner" />
+    {% set banner = "../static/img/banners/banner_trees.jpg" %}
   {% endif %}
+
+  <img src="{{ resize_image(path=banner, width=1920, height=1080) }}" alt="" class="banner" />
 </header>
