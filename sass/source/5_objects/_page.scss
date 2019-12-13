@@ -38,7 +38,7 @@ body {
 
 .post, .archive {
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto) 1fr repeat(2, auto);
+  grid-template-rows: auto calc(100vh - #{$base-line-height * 2.5}) 1fr repeat(2, auto);
   grid-template-areas:
     "nav"
     "header"

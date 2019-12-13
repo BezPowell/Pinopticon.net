@@ -7,13 +7,19 @@
 {% set active = "" %}
 {# get root node to generate menu #}
 {% set root = get_section(path="_index.md") %}
-<nav class="site-navigation">
+<nav class="site-navigation" id="site-navigation">
   <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
   <div class="main-menu-container">
     <ul id="primary-menu" class="main-menu" aria-expanded="false">
-      <li class="menu-item">
-        <a href="/">Home</a>
-      </li>
+      {% if this.permalink == root.permalink %}
+        <li class="menu-item active">
+          <a href="{{ root.permalink }}">Home</a>
+        </li>
+      {% else %}
+        <li class="menu-item">
+          <a href="{{ root.permalink }}">Home</a>
+        </li>
+      {% endif %}
       {% for section in root.subsections %}
         {% set item = get_section(path=section, metadata_only=true) %}
         {% if this.permalink == item.permalink %}{% set active = " active" %}{% endif %}
