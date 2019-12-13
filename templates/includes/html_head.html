@@ -1,3 +1,9 @@
+{# Setup this value independent of whether page or section #}
+{% if page %}
+  {% set this = page %}
+{% elif section %}
+  {% set this = section %}
+{% endif %}
 
 <!doctype html>
 <html lang="en">
@@ -8,19 +14,15 @@
 
   <link rel="stylesheet" href="{{ get_url(path='css/main.css') }}" />
 
-  {% if page.title %}
-    <title>{{ page.title }}</title>
-  {% elif section.title %}
-    <title>{{ section.title }}</title>
+  {% if this.title %}
+    <title>{{ this.title }}</title>
   {% else %}
     <title>{{ config.title }}</title>
   {% endif %}
 </head>
 
-{% if section %}
-  <body class="page archive">
-{% elif page.extra.class %}
-  <body class="page {{ page.extra.class }}">
+{% if this.extra.class %}
+  <body class="page {{ this.extra.class }}">
 {% else %}
   <body class="page">
 {%  endif %}

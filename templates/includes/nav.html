@@ -27,7 +27,7 @@
           <a href="{{ item.permalink }}">{{ item.title }}</a>
         </li>
       {% endfor %}
-      {% for page in root.pages %}
+      {% for page in root.pages | reverse %}
         {% if this.permalink == page.permalink %}{% set active = " active" %}{% endif %}
         <li class="menu-item{{ active }}">
           <a href="{{ page.permalink }}">{{ page.title }}</a>

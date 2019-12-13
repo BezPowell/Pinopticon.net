@@ -1,10 +1,10 @@
 +++
-title = "Blog"
-date = 2019-03-09
+title = "Contact"
+date = 2019-12-13
 
 # Custom data
 [extra]
 author = "Berwyn"
 banner = "/img/banners/stairwell_banner.jpg"
-class = "archive"
 +++
+## Thank you for getting in touch

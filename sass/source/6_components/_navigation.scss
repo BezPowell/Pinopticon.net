@@ -8,6 +8,8 @@
     background-color: var(--background-colour);
     color: var(--text-colour);
 
+    z-index: 1;
+
     @media screen and (hover: hover) and (min-width: $breakpoint-large) {
         @include position($position: absolute, $top: $base-line-height * 2, $right: 0, $left: 0);
 

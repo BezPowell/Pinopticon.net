@@ -2,3 +2,26 @@ img {
   width: 100%;
   height: auto;
 }
+
+figure {
+  --text-colour: var(--main-colour);
+  --background-colour: var(--monotones_base03);
+
+  position: relative;
+
+  &:focus-within, &:hover {
+      --text-colour: var(--monotones_base03);
+      --background-colour: var(--contrast-colour);
+  }
+}
+
+figcaption {
+  @include position($position: absolute, $right: 0, $bottom: 0, $left: 0);
+
+  background-color: var(--background-colour);
+  color: var(--text-colour);
+
+  padding: calc(var(--site-padding) / 2) var(--site-padding);
+
+  transition: background-color 0.2s, color 0.2s;
+}
