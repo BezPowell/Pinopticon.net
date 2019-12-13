@@ -12,8 +12,10 @@
       <p class="site-description"><a href="/" rel="home">Pinopticon.net</a></p>
   </div>
   {% if this.extra.banner %}
-    <img src="{{ get_url(path=this.extra.banner) }}" alt="" class="banner" />
+    {% set banner = "../static" ~ this.extra.banner %}
   {% else %}
-    <img src="{{ get_url(path="img/banners/banner_trees.jpg") }}" alt="" class="banner" />
+    {% set banner = "../static/img/banners/banner_trees.jpg" %}
   {% endif %}
+
+  <img src="{{ resize_image(path=banner, width=1920, height=1080) }}" alt="" class="banner" />
 </header>

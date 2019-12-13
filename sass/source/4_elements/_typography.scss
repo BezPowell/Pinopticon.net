@@ -14,8 +14,7 @@
       normal: "muli-v19-latin-700",
       italic: "muli-v19-latin-700italic",
     )
-  ),
-  $display: optional
+  )
 );
 
 @include fontFace(
@@ -26,8 +25,7 @@
       normal: "lato-v16-latin-regular",
       italic: "lato-v16-latin-italic",
     )
-  ),
-  $display: optional
+  )
 );
 
 body {
