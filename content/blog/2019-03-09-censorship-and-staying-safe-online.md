@@ -4,8 +4,11 @@ date = 2019-03-09
 template = "post.html"
 [taxonomies]
 categories = ["Philosophy"]
+
+# Custom data
 [extra]
 class = "post"
+banner = "/img/banners/stairwell_banner.jpg"
 +++
 <blockquote class="wp-block-quote">
   <p>
