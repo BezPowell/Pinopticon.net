@@ -1,13 +1,14 @@
 # netlify.toml
 
 [[headers]]
-  # Set a default cache header of 100 hours for all assets
-  for = "/*"
+  for = "/processed_images/*"
     [headers.values]
       cache-control = "public,max-age=360000"
 [[headers]]
-  # Set cache, client hints and security headers for documents
-  for = "/*.html"
+  for = "/css/*"
     [headers.values]
-      cache-control = "public,max-age=3600" # allow HTML docs to be stored for an hour
-      Feature-Policy = "camera 'none'; geolocation 'none'; microphone 'none'" # disable access to privileged APIs
+      cache-control = "public,max-age=360000"
+[[headers]]
+  for = "/js/*"
+    [headers.values]
+      cache-control = "public,max-age=360000"
