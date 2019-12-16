@@ -8,7 +8,7 @@
 {# get root node to generate menu #}
 {% set root = get_section(path="_index.md") %}
 <nav class="site-navigation" id="site-navigation">
-  <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
+  <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
   <div class="main-menu-container">
     <ul id="primary-menu" class="main-menu" aria-expanded="false">
       {% if this.permalink == root.permalink %}
