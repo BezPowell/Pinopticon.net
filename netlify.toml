@@ -7,7 +7,7 @@
       cache-control = "public,max-age=360000"
 [[headers]]
   # Set cache, client hints and security headers for documents
-  for = "/"
+  for = "/*.html"
     [headers.values]
       cache-control = "public,max-age=3600" # allow HTML docs to be stored for an hour
       Feature-Policy = "camera 'none'; geolocation 'none'; microphone 'none'" # disable access to privileged APIs
