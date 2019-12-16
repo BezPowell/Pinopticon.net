@@ -12,3 +12,7 @@
   for = "/js/*"
     [headers.values]
       cache-control = "public,max-age=360000"
+[[headers]]
+  for = "/fonts/*"
+    [headers.values]
+      cache-control = "public,max-age=360000"
