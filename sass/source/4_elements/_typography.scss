@@ -35,15 +35,11 @@ body {
     @include type-setting(0);
 }
 
-main {
-  // Demonstrate the vertical rhythm at 12px
-  background-image: linear-gradient(#eee 1px, transparent 1px);
-  background-size: 100% $base-line-height;
-}
-
 p {
   @include type-setting(0);
   margin: $base-line-height 0;
+
+  page-break-inside: avoid;
 }
 
 h1, h2, h3, h4, h5, h6 {

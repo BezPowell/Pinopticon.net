@@ -15,13 +15,13 @@ body {
 body {
   display: grid;
 
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(var(--site-padding), calc((100% - #{$breakpoint-xlarge}) / 2)) 1fr minmax(var(--site-padding), calc((100% - #{$breakpoint-xlarge}) / 2));
   grid-template-rows: auto calc(100vh - #{$base-line-height * 2.5}) 1fr auto;
   grid-template-areas:
-    "nav"
-    "header"
-    "main"
-    "footer"
+  "nav nav nav"
+  "header header header"
+  ". main ."
+  "footer footer footer"
   ;
 
   min-height: 100vh;
@@ -29,30 +29,30 @@ body {
   @media screen and (hover: hover) and (min-width: $breakpoint-large) {
     grid-template-rows: 100vh 1fr auto;
     grid-template-areas:
-    "header"
-    "main"
-    "footer"
+    "header header header"
+    ". main ."
+    "footer footer footer"
   ;
   }
 }
 
 .post, .archive {
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(var(--site-padding), calc((100% - #{$breakpoint-xlarge}) / 2)) 1fr minmax(var(--site-padding), calc((100% - #{$breakpoint-xlarge}) / 2));
   grid-template-rows: auto calc(100vh - #{$base-line-height * 2.5}) 1fr repeat(2, auto);
   grid-template-areas:
-    "nav"
-    "header"
-    "main"
-    "sidebar"
-    "footer"
+    "nav nav nav"
+    "header header header"
+    ". main ."
+    ". sidebar ."
+    "footer footer footer"
   ;
 
   @media screen and (hover: hover) and (min-width: $breakpoint-large) {
     grid-template-areas:
-    "header header"
-    "main sidebar"
-    "footer footer";
-    grid-template-columns: 1fr 40ch;
+    "header header header header"
+    ". main sidebar ."
+    "footer footer footer footer";
+    grid-template-columns: minmax(var(--site-padding), calc((100% - #{$breakpoint-xlarge}) / 2)) 1fr 40ch minmax(var(--site-padding), calc((100% - #{$breakpoint-xlarge}) / 2));
     grid-template-rows: 100vh 1fr auto;
   };
 }
@@ -76,12 +76,10 @@ body {
 
 .site-content {
   grid-area: main;
-  padding: 0 var(--site-padding);
 }
 
 .site-sidebar {
   grid-area: sidebar;
-  padding: 0 var(--site-padding);
 }
 
 .site-footer {
