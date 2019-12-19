@@ -7,7 +7,6 @@ categories = ["Uncategorised"]
 
 # Custom data
 [extra]
-class = "post"
 banner = "/img/banners/stairwell_banner.jpg"
 +++
 <div class="text-block">

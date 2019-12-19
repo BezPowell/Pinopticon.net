@@ -1,5 +1,5 @@
 +++
-title = "Pinopticon.net"
+title = "Home"
 description = "Photography & Philosophy from Berwyn Powell"
 date = 2019-03-09
 

@@ -7,7 +7,6 @@ categories = ["Philosophy"]
 
 # Custom data
 [extra]
-class = "post"
 banner = "/img/banners/stairwell_banner.jpg"
 +++
 <blockquote class="wp-block-quote">

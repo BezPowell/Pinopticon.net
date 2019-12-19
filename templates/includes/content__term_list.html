@@ -1,0 +1,8 @@
+<main class="site-content">
+  <h2>{{ taxonomy.name }}</h2>
+  <ul>
+    {% for term in terms %}
+        <li><a href="{{ term.permalink }}">{{term.name}} ({{ term.pages | length }})</a></li>
+    {% endfor %}
+  </ul>
+</main>

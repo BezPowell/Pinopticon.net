@@ -15,4 +15,18 @@
       {% endfor %}
     </ul>
   {% endif %}
+  {% for tax in config.taxonomies %}
+    <h2><a href="{{ get_url(path=tax.name) }}">{{tax.name | title }}</a></h2>
+    <ul>
+      {% set taxonomy = get_taxonomy(kind=tax.name) %}
+      {% for name, items in taxonomy %}
+        {% set length = items | length %}
+        {% if length > 0 %}
+          {% for item in items %}
+            <li><a href="{{ get_taxonomy_url(kind=tax.name, name=item.name) }}">{{item.name}} ({{ item.pages | length }})</a></li>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endfor %}
 </aside>
