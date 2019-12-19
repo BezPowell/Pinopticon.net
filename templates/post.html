@@ -1,7 +1,9 @@
-{% include "includes/html_head.html" %}
-{% include "includes/header.html" %}
-{% include "includes/nav.html" %}
-{% include "includes/content__page.html" %}
-{% include "includes/sidebar.html" %}
-{% include "includes/footer.html" %}
-{% include "includes/html_scripts.html" %}
+{% extends "page.html" %}
+
+{% block body_class %}post{% endblock body_class %}
+
+{% block content %}
+  {% include "includes/content__page.html" %}
+  {% include "includes/sidebar.html" %}
+  {% include "includes/footer.html" %}
+{% endblock content %}

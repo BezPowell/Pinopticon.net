@@ -1,0 +1,13 @@
+<main class="site-content">
+  <h2>Posts in {{ term.name }}</h2>
+  {% for post in term.pages | sort(attribute="date") | reverse %}
+    <article class="post">
+      <header>
+        <h3 class="post-title"><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
+        <p class="meta">
+          <span>Posted on <time class="entry-date published" datetime="{{ post.date }}">{{ post.date }}</time></span>
+        </p>
+      </header>
+    </article>
+  {% endfor %}
+</main>

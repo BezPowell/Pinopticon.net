@@ -1,7 +1,13 @@
-{% include "includes/html_head.html" %}
-{% include "includes/header.html" %}
-{% include "includes/nav.html" %}
-{% include "includes/content__section.html" %}
-{% include "includes/sidebar.html" %}
-{% include "includes/footer.html" %}
-{% include "includes/html_scripts.html" %}
+{% extends "index.html" %}
+
+{% block body_class %}archive{% endblock body_class %}
+
+{% block branding %}
+    {% include "includes/branding__page.html" %}
+{% endblock branding %}
+
+{% block content %}
+  {% include "includes/content__section.html" %}
+  {% include "includes/sidebar.html" %}
+  {% include "includes/footer.html" %}
+{% endblock content %}

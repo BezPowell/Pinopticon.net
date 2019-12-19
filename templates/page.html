@@ -1,6 +1,10 @@
-{% include "includes/html_head.html" %}
-{% include "includes/header.html" %}
-{% include "includes/nav.html" %}
-{% include "includes/content__page.html" %}
-{% include "includes/footer.html" %}
-{% include "includes/html_scripts.html" %}
+{% extends "index.html" %}
+
+{% block branding %}
+    {% include "includes/branding__page.html" %}
+{% endblock branding %}
+
+{% block content %}
+    {% include "includes/content__page.html" %}
+    {% include "includes/footer.html" %}
+{% endblock content %}

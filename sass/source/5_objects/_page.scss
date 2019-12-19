@@ -15,7 +15,7 @@ body {
 body {
   display: grid;
 
-  grid-template-columns: minmax(var(--site-padding), calc((100% - #{$breakpoint-xlarge}) / 2)) 1fr minmax(var(--site-padding), calc((100% - #{$breakpoint-xlarge}) / 2));
+  grid-template-columns: minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2)) 1fr minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2));
   grid-template-rows: auto calc(100vh - #{$base-line-height * 2.5}) 1fr auto;
   grid-template-areas:
   "nav nav nav"
@@ -23,6 +23,8 @@ body {
   ". main ."
   "footer footer footer"
   ;
+
+  column-gap: var(--site-padding);
 
   min-height: 100vh;
 
@@ -37,7 +39,7 @@ body {
 }
 
 .post, .archive {
-  grid-template-columns: minmax(var(--site-padding), calc((100% - #{$breakpoint-xlarge}) / 2)) 1fr minmax(var(--site-padding), calc((100% - #{$breakpoint-xlarge}) / 2));
+  grid-template-columns: minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2)) 1fr minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2));
   grid-template-rows: auto calc(100vh - #{$base-line-height * 2.5}) 1fr repeat(2, auto);
   grid-template-areas:
     "nav nav nav"
@@ -47,13 +49,17 @@ body {
     "footer footer footer"
   ;
 
+  column-gap: var(--site-padding);
+
   @media screen and (hover: hover) and (min-width: $breakpoint-large) {
     grid-template-areas:
     "header header header header"
     ". main sidebar ."
     "footer footer footer footer";
-    grid-template-columns: minmax(var(--site-padding), calc((100% - #{$breakpoint-xlarge}) / 2)) 1fr 40ch minmax(var(--site-padding), calc((100% - #{$breakpoint-xlarge}) / 2));
+    grid-template-columns: minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2)) 1fr 40ch minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2));
     grid-template-rows: 100vh 1fr auto;
+
+    column-gap: var(--site-padding);
   };
 }
 

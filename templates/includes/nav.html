@@ -1,17 +1,10 @@
-{# Setup this value independent of whether page or section #}
-{% if page %}
-  {% set this = page %}
-{% elif section %}
-  {% set this = section %}
-{% endif %}
 {% set active = "" %}
 {# get root node to generate menu #}
 {% set root = get_section(path="_index.md") %}
-<nav class="site-navigation" id="site-navigation">
   <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
   <div class="main-menu-container">
     <ul id="primary-menu" class="main-menu" aria-expanded="false">
-      {% if this.permalink == root.permalink %}
+      {% if current_url == root.permalink %}
         <li class="menu-item active">
           <a href="{{ root.permalink }}">Home</a>
         </li>
@@ -22,17 +15,16 @@
       {% endif %}
       {% for section in root.subsections %}
         {% set item = get_section(path=section, metadata_only=true) %}
-        {% if this.permalink == item.permalink %}{% set active = " active" %}{% endif %}
+        {% if current_url == item.permalink %}{% set active = " active" %}{% endif %}
         <li class="menu-item{{ active }}">
           <a href="{{ item.permalink }}">{{ item.title }}</a>
         </li>
       {% endfor %}
       {% for page in root.pages | reverse %}
-        {% if this.permalink == page.permalink %}{% set active = " active" %}{% endif %}
+        {% if current_url == page.permalink %}{% set active = " active" %}{% endif %}
         <li class="menu-item{{ active }}">
           <a href="{{ page.permalink }}">{{ page.title }}</a>
         </li>
       {% endfor %}
     </ul>
   </div>
-</nav>
