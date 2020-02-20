@@ -15,3 +15,7 @@
 
   --site-padding:       #{$base-line-height};
 }
+
+html {
+  scroll-behavior: smooth;
+}
