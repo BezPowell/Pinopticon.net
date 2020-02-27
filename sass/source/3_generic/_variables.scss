@@ -8,10 +8,10 @@
     }
   }
 
-  --text-colour:        var(--monotones_base00);
-  --background-colour:  var(--monotones_base3);
-  --main-colour:        var(--colours_cyan);
-  --contrast-colour:    var(--colours_magenta);
+  --text-colour:        var(--monotones_base4);
+  --background-colour:  var(--monotones_base1);
+  --main-colour:        var(--colours_main);
+  --contrast-colour:    var(--colours_contrast);
 
   --site-padding:       #{$base-line-height};
 }
