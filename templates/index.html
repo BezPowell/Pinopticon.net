@@ -34,10 +34,6 @@
     </nav>
     {% block content %}
     {% endblock content %}
-    <script src="{{ get_url(path='js/navigation.js') }}"></script>
-    <script src="{{ get_url(path='js/simple-lightbox.js') }}"></script>
-    <script>
-      new SimpleLightbox(document.querySelectorAll(".gallery-item a"));
-    </script>
+    <script type="module" src="{{ get_url(path='js/site.js') }}"></script>
   </body>
 </html>
