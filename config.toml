@@ -18,5 +18,8 @@ taxonomies = [
   {name = "categories", paginate_by = 5},  # 5 items per page for a term
 ]
 
+# Enable RSS feed
+generate_rss = true
+
 [extra]
 # Put all your custom variables here
