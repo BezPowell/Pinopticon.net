@@ -9,6 +9,8 @@ figure {
 
   position: relative;
 
+  column-span: all;
+
   &:focus-within, &:hover {
       --this-background-colour: var(--contrast-colour);
   }
