@@ -27,9 +27,15 @@
       $filename: $src + $path;
       @font-face {
         font-family: $fontFamily;
-        src: url($filename + '.woff2') format('woff2'),
-             url($filename + '.woff') format('woff'),
-             url($filename + '.ttf') format('truetype');
+        @if $variable {
+          src: url($filename + '.woff2') format(‘woff2 supports variations’),
+               url($filename + '.woff2') format('woff2-variations');
+        }
+        @else {
+          src: url($filename + '.woff2') format('woff2'),
+               url($filename + '.woff') format('woff'),
+               url($filename + '.ttf') format('truetype');
+        }
        font-style: $style;
        font-weight: $weight;
        font-display: $display;
