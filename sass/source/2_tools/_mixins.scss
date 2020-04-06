@@ -28,7 +28,7 @@
       @font-face {
         font-family: $fontFamily;
         @if $variable {
-          src: url($filename + '.woff2') format(‘woff2 supports variations’),
+          src: url($filename + '.woff2') format('woff2 supports variations'),
                url($filename + '.woff2') format('woff2-variations');
         }
         @else {
