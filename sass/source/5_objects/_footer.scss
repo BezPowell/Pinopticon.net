@@ -7,3 +7,11 @@
   
   border-top: 1px solid var(--main-colour);
 }
+
+  .site-footer .menu {
+    @include noList();
+  }
+
+    .site-footer .menu-item {
+      margin-inline-start: 1ch;
+    }
