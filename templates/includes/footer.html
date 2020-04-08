@@ -1,3 +1,14 @@
+{# get root node to generate menu #}
+{% set root = get_section(path="_index.md") %}
 <footer class="site-footer">
   <p>Pinopticon.net &#169;Berwyn Powell</p>
+  <ul class="menu">
+    {% for page_item in root.pages | reverse %}
+      {% if page_item.extra.footer_menu %}
+        <li class="menu-item">
+          <a href="{{ page_item.permalink }}">{{ page_item.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </footer>

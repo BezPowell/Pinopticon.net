@@ -1,5 +1,6 @@
 .site-footer {
   @extend .site-header;
+  @include displayFlex(row wrap, space-between, center);
 
   background-color: var(--background-colour);
   color: var(--text-colour);
