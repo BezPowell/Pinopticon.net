@@ -7,7 +7,8 @@
       italic: "Muli-Italic-VariableFont_wght",
     )
   ),
-  $variable: true
+  $variable: true,
+  $display: swap
 );
 
 @include fontFace(
@@ -22,7 +23,8 @@
       normal: "lato-v16-latin-700",
       italic: "lato-v16-latin-700italic",
     )
-  )
+  ),
+  $display: swap
 );
 
 body {
