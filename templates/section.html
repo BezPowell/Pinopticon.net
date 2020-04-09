@@ -2,10 +2,6 @@
 
 {% block body_class %}archive{% endblock body_class %}
 
-{% block skip_content %}
-    {% include "includes/skip_content.html" %}
-{% endblock skip_content %}
-
 {% block branding %}
     {% include "includes/branding__page.html" %}
 {% endblock branding %}
@@ -13,5 +9,4 @@
 {% block content %}
   {% include "includes/content__section.html" %}
   {% include "includes/sidebar.html" %}
-  {% include "includes/footer.html" %}
 {% endblock content %}

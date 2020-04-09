@@ -23,7 +23,9 @@
   </head>
   <body class="page {% block body_class %}{% endblock body_class %}">
     <header class="site-header">
-      {% block skip_content %}{% endblock skip_content %}
+      {% block skip_content %}
+        {% include "includes/skip_content.html" %}
+      {% endblock skip_content %}
       <div class="site-branding">
         {% block branding %}
           {% include "includes/branding__front.html" %}
@@ -34,8 +36,14 @@
     <nav class="site-navigation" id="site-navigation">
       {% include "includes/nav.html" %}
     </nav>
+
     {% block content %}
+        {% include "includes/content__front.html" %}
     {% endblock content %}
+
+    {% block footer %}
+      {% include "includes/footer.html" %}
+    {% endblock footer %}
     <script type="module" src="{{ get_url(path='js/site.js') }}"></script>
   </body>
 </html>
