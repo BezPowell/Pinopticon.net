@@ -1,31 +1,20 @@
-{% set active = "" %}
 {# get root node to generate menu #}
 {% set root = get_section(path="_index.md") %}
   <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
   <div class="main-menu-container">
     <ul id="primary-menu" class="main-menu" aria-expanded="false">
-      {% if current_url == root.permalink %}
-        <li class="menu-item active">
-          <a href="{{ root.permalink }}">Home</a>
-        </li>
-      {% else %}
-        <li class="menu-item">
-          <a href="{{ root.permalink }}">Home</a>
-        </li>
-      {% endif %}
-      {% for section_item in root.subsections %}
-        {% set item = get_section(path=section_item, metadata_only=true) %}
-        {% if current_url == item.permalink %}{% set active = " active" %}{% endif %}
-        <li class="menu-item{{ active }}">
-          <a href="{{ item.permalink }}">{{ item.title }}</a>
-        </li>
+      {{ macros::nav_link(url=root.permalink, name="Home") }}
+
+      {# generate links for sections #}
+      {% for link in root.subsections %}
+        {% set item = get_section(path=link, metadata_only=true) %}
+        {{ macros::nav_link(url=item.permalink, name=item.title) }}
       {% endfor %}
-      {% for page_item in root.pages | reverse %}
-        {% if page_item.extra.exclude_nav %}{% continue %}{% endif %}
-        {% if current_url == page_item.permalink %}{% set active = " active" %}{% endif %}
-        <li class="menu-item{{ active }}">
-          <a href="{{ page_item.permalink }}">{{ page_item.title }}</a>
-        </li>
+
+      {# generate links for pages #}
+      {% for item in root.pages | reverse %}
+        {% if item.extra.exclude_nav %}{% continue %}{% endif %}
+        {{ macros::nav_link(url=item.permalink, name=item.title) }}
       {% endfor %}
     </ul>
   </div>

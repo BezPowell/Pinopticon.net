@@ -82,6 +82,10 @@
     display: block;
     padding: $base-line-height /2 $base-line-height;
     text-decoration: none;
+
+    &[href="#content"] {
+        font-weight: bold;
+    }
 }
 
 //Hide menu toggle on large screens with a mouse.
@@ -91,10 +95,6 @@
     @media screen and (hover: hover) and (min-width: $breakpoint-large) {
         display: none;
     }
-}
-
-.active {
-  font-weight: bold;
 }
 
 .skip-content {
