@@ -5,102 +5,63 @@
  */
 
  export function init(containerId) {
-	let container, button, menu, links, i, len;
+    let breakpoint = 992;
+    let currentSize = window.innerWidth;
+    let oldSize = currentSize;
 
-	container = document.getElementById( containerId );
-	if ( ! container ) {
-		return;
-	}
+    if (currentSize < breakpoint) {
+        add(containerId);
+    }
 
-	button = container.getElementsByTagName( 'button' )[0];
-	if ( 'undefined' === typeof button ) {
-		return;
-	}
+    window.addEventListener('resize', function () {
+        currentSize = window.innerWidth;
 
-	menu = container.getElementsByTagName( 'ul' )[0];
+        // If current resize has brought screen size over breakpoint
+        if (currentSize > breakpoint && oldSize <= breakpoint) {
+            remove(containerId);
+        }
 
-	// Hide menu toggle button if menu is empty and return early.
-	if ( 'undefined' === typeof menu ) {
-		button.style.display = 'none';
-		return;
-	}
+        // Else if current resize has brought screen size under breakpoint
+        else if (currentSize < breakpoint && oldSize >= breakpoint) {
+            add(containerId);
+        }
 
-	menu.setAttribute( 'aria-expanded', 'false' );
-	if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
-		menu.className += ' nav-menu';
-	}
+        //Reset oldSize for next check
+        oldSize = currentSize;
+    }, false);
+ }
 
-	button.onclick = function() {
-		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
-			container.className = container.className.replace( ' toggled', '' );
-			button.setAttribute( 'aria-expanded', 'false' );
-			menu.setAttribute( 'aria-expanded', 'false' );
-		} else {
-			container.className += ' toggled';
-			button.setAttribute( 'aria-expanded', 'true' );
-			menu.setAttribute( 'aria-expanded', 'true' );
-		}
-	};
+ function add(containerId) {
+	// get the button and menu nodes
+	let nav = document.getElementById(containerId);
+    let button = nav.querySelector('button');
+    let menu = button.nextElementSibling;
 
-	// Get all the link elements within the menu.
-	links    = menu.getElementsByTagName( 'a' );
+    // set initial (closed menu) states
+    nav.classList.add("js");
+	button.setAttribute('aria-expanded', 'false');
+	button.setAttribute('aria-controls', menu.id);
+    button.hidden = false;
+    menu.hidden = true;
 
-	// Each time a menu link is focused or blurred, toggle focus.
-	for ( i = 0, len = links.length; i < len; i++ ) {
-		links[i].addEventListener( 'focus', toggleFocus, true );
-		links[i].addEventListener( 'blur', toggleFocus, true );
-	}
+    button.addEventListener('click', function() {
+        // toggle menu visibility
+        let expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        menu.hidden = expanded;
+    });
+ }
 
-	/**
-	 * Sets or removes .focus class on an element.
-	 */
-	function toggleFocus() {
-		let self = this;
+ function remove(containerId) {
+	// get the button and menu nodes
+	let nav = document.getElementById(containerId);
+    let button = nav.querySelector('button');
+    let menu = button.nextElementSibling;
 
-		// Move up through the ancestors of the current link until we hit .nav-menu.
-		while ( -1 === self.className.indexOf( 'nav-menu' ) ) {
-
-			// On li elements toggle the class .focus.
-			if ( 'li' === self.tagName.toLowerCase() ) {
-				if ( -1 !== self.className.indexOf( 'focus' ) ) {
-					self.className = self.className.replace( ' focus', '' );
-				} else {
-					self.className += ' focus';
-				}
-			}
-
-			self = self.parentElement;
-		}
-	}
-
-	/**
-	 * Toggles `focus` class to allow submenu access on tablets.
-	 */
-	( function( container ) {
-		let touchStartFn, i,
-			parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
-
-		if ( 'ontouchstart' in window ) {
-			touchStartFn = function( e ) {
-				let menuItem = this.parentNode, i;
-
-				if ( ! menuItem.classList.contains( 'focus' ) ) {
-					e.preventDefault();
-					for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
-						if ( menuItem === menuItem.parentNode.children[i] ) {
-							continue;
-						}
-						menuItem.parentNode.children[i].classList.remove( 'focus' );
-					}
-					menuItem.classList.add( 'focus' );
-				} else {
-					menuItem.classList.remove( 'focus' );
-				}
-			};
-
-			for ( i = 0; i < parentLink.length; ++i ) {
-				parentLink[i].addEventListener( 'touchstart', touchStartFn, false );
-			}
-		}
-	}( container ) );
+    // Remove attributes from elements
+    nav.classList.remove("js");
+	button.removeAttribute('aria-expanded');
+	button.removeAttribute('aria-controls');
+    button.hidden = true;
+    menu.hidden = false;
  }

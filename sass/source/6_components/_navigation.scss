@@ -1,7 +1,4 @@
 .site-navigation {
-    position: sticky;
-    top: 0;
-
     --text-colour: var(--main-colour);
 
     background-color: var(--background-colour);
@@ -9,7 +6,12 @@
 
     z-index: 1;
 
-    @media screen and (hover: hover) and (min-width: $breakpoint-large) {
+    &.js {
+        position: sticky;
+        top: 0;
+    }
+
+    @media screen and (min-width: $breakpoint-large) {
         @include position($position: absolute, $top: $base-line-height * 2, $right: 0, $left: 0);
 
         padding-top: 0;
@@ -19,83 +21,43 @@
     }
 }
 
-.main-menu-container {
-    @include position(fixed, $base-line-height * 2.5, 0, 0, 0);
+    .main-menu {
+        @include noList();
 
-    transform: translateX(-100%);
-    transition: transform 0.3s;
+        margin: 0;
 
-    background-color: var(--background-colour);
-    color: var(--text-colour);
+        background-color: var(--background-colour);
+        color: var(--text-colour);
 
-    overflow-y: auto;
+        @media screen and (min-width: $breakpoint-large) {
+            @include displayFlex($justify: flex-end);
+        }
 
-    @media screen and (hover: hover) and (min-width: $breakpoint-large) {
-        position: static;
+        // Only apply styles when js has loaded successfully so menu is visible if js fails to load.
+        .js & {
+            @include position(fixed, $base-line-height * 2.5, 0, 0, 0);
 
-        transform: none;
-        transition: none;
+            transform: translateX(0%);
+            transition: transform 0.3s 0.1s;
 
-        overflow-y: visible;
-    }
-}
+            overflow-y: auto;
 
-.site-navigation.toggled .main-menu-container {
-    transform: translateX(0%);
-}
-
-.main-menu {
-    @include noList();
-
-    margin: 0;
-
-    @media screen and (hover: hover) and (min-width: $breakpoint-large) {
-        @include displayFlex($justify: flex-end);
-    }
-}
-
-//First level submenus form the mega menu
-.main-menu > .menu-item > .sub-menu {
-    @include noList();
-    @include type-setting(-1);
-
-    @media screen and (hover: hover) and (min-width: $breakpoint-large) {
-        @include position(absolute, $top: 100%, $left: 0, $right: 0);
-        @include displayFlex($justify: flex-end);
-
-        background: var(--background-colour);
-
-        visibility: hidden;
-        opacity: 0;
-    }
-}
-
-    .site-navigation .menu-item:hover .sub-menu, .site-navigation .menu-item:focus-within .sub-menu {
-        @media screen and (hover: hover) and (min-width: $breakpoint-large) {
-            visibility: visible;
-            opacity: 1;
+            &[hidden] {
+                display: unset;
+                transform: translateX(-100%);
+            }
         }
     }
 
+        .site-navigation .menu-item > a {
+            display: block;
+            padding: $base-line-height /2 $base-line-height;
+            text-decoration: none;
 
-.site-navigation .menu-item > a {
-    display: block;
-    padding: $base-line-height /2 $base-line-height;
-    text-decoration: none;
-
-    &[href="#content"] {
-        font-weight: bold;
-    }
-}
-
-//Hide menu toggle on large screens with a mouse.
-.menu-toggle {
-    color: var(--main-colour);
-
-    @media screen and (hover: hover) and (min-width: $breakpoint-large) {
-        display: none;
-    }
-}
+            &[href="#content"] {
+                font-weight: bold;
+            }
+        }
 
 .skip-content {
     @include position($left: 50%, $bottom: $base-line-height);
