@@ -1,17 +1,20 @@
 <ul class="gallery">
   {% for asset in page.assets %}
     {% if asset is matching("[.](jpg|png)$") %}
+      {% set filename = asset | split(pat="/") | last | split(pat=".") | first %}
+      {% set alt = "" %}
+      {% if page.extra.assets[filename].alt %}
+        {% set alt = page.extra.assets[filename].name %}
+      {% endif %}
       <li class="gallery-item">
         <figure>
           <a href="{{ get_url(path=asset) }}">
-            <img src="{{ resize_image(path=asset, width=900, height=600) }}"
-            srcset="{{ resize_image(path=asset, width=1350, height=900) }}  1350w,
-              {{ resize_image(path=asset, width=900, height=600) }} 900w,
-              {{ resize_image(path=asset, width=450, height=300) }}  450w"
-            sizes="(min-width: 1200px) 25vw, (min-width: 992px) 33.3vw, (min-width: 768px) 50vw, 100vw"
-            alt=""
-            loading="lazy"
-            />
+            <img src="{{ resize_image(path=asset, width=900, height=600) }}" srcset="{{ resize_image(path=asset, width=1350, height=900) }}  1350w,
+                  {{ resize_image(path=asset, width=900, height=600) }} 900w,
+                  {{ resize_image(path=asset, width=450, height=300) }}  450w"
+              sizes="(min-width: 1200px) 25vw, (min-width: 992px) 33.3vw, (min-width: 768px) 50vw, 100vw"
+              alt="{{ alt }}"
+              loading="lazy" />
           </a>
         </figure>
       </li>
