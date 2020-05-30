@@ -16,6 +16,11 @@
               alt="{{ alt }}"
               loading="lazy" />
           </a>
+          {% if page.extra.assets[filename].caption %}
+            <figcaption>
+              {{ page.extra.assets[filename].caption }}
+            </figcaption>
+          {% endif %}
         </figure>
       </li>
     {% endif %}
