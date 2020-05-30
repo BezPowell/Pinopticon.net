@@ -4,7 +4,7 @@
       {% set filename = asset | split(pat="/") | last | split(pat=".") | first %}
       {% set alt = "" %}
       {% if page.extra.assets[filename].alt %}
-        {% set alt = page.extra.assets[filename].name %}
+        {% set alt = page.extra.assets[filename].alt %}
       {% endif %}
       <li class="gallery-item">
         <figure>
