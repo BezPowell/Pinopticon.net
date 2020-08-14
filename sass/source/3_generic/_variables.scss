@@ -1,19 +1,25 @@
 :root {
+
   //Colours
-  @each $colour, $tones in $colours {
+  @each $colour,
+  $tones in $colours {
+
     //...and then the hex for each tone of the colour.
-    @each $tone, $hex in $tones {
-      $varname: $colour + "_" + $tone;
+    @each $tone,
+    $hex in $tones {
+      $varname: $colour + "_"+ $tone;
       --#{$varname}: #{$hex};
     }
   }
 
-  --text-colour:        var(--monotones_base4);
-  --background-colour:  var(--monotones_base1);
-  --main-colour:        var(--colours_main);
-  --contrast-colour:    var(--colours_contrast);
+  --text-colour: var(--monotones_base4);
+  --background-colour: var(--monotones_base1);
+  --background-colour_transparent: var(--monotones_base1_transparent);
+  --background-colour_transparent_dark: var(--monotones_base1_transparent_dark);
+  --main-colour: var(--colours_main);
+  --contrast-colour: var(--colours_contrast);
 
-  --site-padding:       #{$base-line-height};
+  --site-padding: #{$base-line-height};
 }
 
 html {

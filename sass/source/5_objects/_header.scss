@@ -1,35 +1,44 @@
 .site-header {
   --text-colour: var(--main-colour);
-  
-  position: relative;
-}
 
-.site-branding {
-  @include position($position: absolute, $top: $base-line-height, $right: 0, $left: 0);
-  @include type-setting(4);
-
-  padding: calc(var(--site-padding) / 2) var(--site-padding);
-
-  background-color: var(--background-colour);
-  color: var(--text-colour);
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: 1fr;
 
   @media screen and (min-width: $breakpoint-large) {
-    top: unset;
-    bottom: 0;
-    left: $base-line-height * 2;
-
-    width: 100vh;
-
-    transform: translateY(100%) rotate(-90deg);
-    transform-origin: 0 0;
+    grid-template-columns: $base-line-height * 2 max-content 1fr;
   }
 }
 
-.site-title, .site-description {
+.site-branding {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  z-index: 2;
+
+  @include type-setting(4);
+  writing-mode: vertical-rl;
+
+  padding: var(--site-padding) calc(var(--site-padding) / 2);
+
+  background-color: var(--background-colour_transparent_dark);
+  color: var(--text-colour);
+
+  @media screen and (min-width: $breakpoint-large) {
+    transform: rotate(180deg);
+  }
+}
+
+.site-title,
+.site-description {
   margin: 0;
 
   font-size: inherit;
   line-height: inherit;
+}
+
+.banner {
+  grid-column: 1 / span all;
+  grid-row: 1 / span all;
 }
 
 .banner img {
