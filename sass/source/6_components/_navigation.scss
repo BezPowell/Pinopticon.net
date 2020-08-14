@@ -1,47 +1,20 @@
 .site-navigation {
-    position: sticky;
-    top: 0;
-
     --text-colour: var(--main-colour);
 
-    background-color: var(--background-colour);
+    background-color: var(--background-colour_transparent);
     color: var(--text-colour);
 
     z-index: 1;
 
-    @media screen and (hover: hover) and (min-width: $breakpoint-large) {
+    @media screen and (min-width: $breakpoint-large) {
         @include position($position: absolute, $top: $base-line-height * 2, $right: 0, $left: 0);
 
         padding-top: 0;
         padding-bottom: 0;
 
-        box-shadow: 0px 0px 16px -5px rgba(0,0,0,0.6);
+        background-color: var(--background-colour_transparent_dark);
+        box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.6);
     }
-}
-
-.main-menu-container {
-    @include position(fixed, $base-line-height * 2.5, 0, 0, 0);
-
-    transform: translateX(-100%);
-    transition: transform 0.3s;
-
-    background-color: var(--background-colour);
-    color: var(--text-colour);
-
-    overflow-y: auto;
-
-    @media screen and (hover: hover) and (min-width: $breakpoint-large) {
-        position: static;
-
-        transform: none;
-        transition: none;
-
-        overflow-y: visible;
-    }
-}
-
-.site-navigation.toggled .main-menu-container {
-    transform: translateX(0%);
 }
 
 .main-menu {
@@ -49,36 +22,12 @@
 
     margin: 0;
 
-    @media screen and (hover: hover) and (min-width: $breakpoint-large) {
+    @media screen and (min-width: $breakpoint-large) {
         @include displayFlex($justify: flex-end);
     }
 }
 
-//First level submenus form the mega menu
-.main-menu > .menu-item > .sub-menu {
-    @include noList();
-    @include type-setting(-1);
-
-    @media screen and (hover: hover) and (min-width: $breakpoint-large) {
-        @include position(absolute, $top: 100%, $left: 0, $right: 0);
-        @include displayFlex($justify: flex-end);
-
-        background: var(--background-colour);
-
-        visibility: hidden;
-        opacity: 0;
-    }
-}
-
-    .site-navigation .menu-item:hover .sub-menu, .site-navigation .menu-item:focus-within .sub-menu {
-        @media screen and (hover: hover) and (min-width: $breakpoint-large) {
-            visibility: visible;
-            opacity: 1;
-        }
-    }
-
-
-.site-navigation .menu-item > a {
+.site-navigation .menu-item>a {
     display: block;
     padding: $base-line-height /2 $base-line-height;
     text-decoration: none;
@@ -88,21 +37,14 @@
     }
 }
 
-//Hide menu toggle on large screens with a mouse.
-.menu-toggle {
-    color: var(--main-colour);
-
-    @media screen and (hover: hover) and (min-width: $breakpoint-large) {
-        display: none;
-    }
-}
-
 .skip-content {
     @include position($left: 50%, $bottom: $base-line-height);
     transform: translateX(-50%);
 
     font-size: 3rem;
     line-height: 1;
+
+    z-index: 2;
 
     &::before {
         content: '↓';

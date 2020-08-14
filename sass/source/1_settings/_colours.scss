@@ -5,7 +5,9 @@ $colours: (
         "contrast": #da76c3
     ),
     "monotones": (
-        "base1":       #081b23,
-        "base4":       #5a9795,
+        "base1":           #081b23,
+        "base1_transparent": rgba(#081b23, 0.7),
+        "base1_transparent_dark": rgba(#081b23, 0.9),
+        "base4":           #5a9795,
     )
 );
