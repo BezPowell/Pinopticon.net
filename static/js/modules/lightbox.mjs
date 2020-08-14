@@ -31,40 +31,38 @@ class Lightbox {
         //Add buttons
         let keys = Array.from(this.galleries[gallery].keys());
         if (position > 0) {
-            let prev_button = document.createElement("button");
-            prev_button.classList.add("prev-button");
-            prev_button.classList.add("control");
-            prev_button.textContent = "back";
-            dialog.appendChild(prev_button);
+            let direction = -1;
+            let item_path = keys[position + direction];
+            this.createButton(item_path, gallery, direction)
 
-            //Add event listener
-            prev_button.addEventListener('click', function (event) {
-                event.preventDefault();
-                let item_path = keys[position - 1];
-                let gallery_path = gallery;
-                me.openLightbox(gallery_path, item_path);
-            });
         }
         if (position < length - 1) {
-            let next_button = document.createElement("button");
-            next_button.classList.add("next-button");
-            next_button.classList.add("control");
-            next_button.textContent = "next";
-            dialog.appendChild(next_button);
-
-            //Add event listener
-            next_button.addEventListener('click', function (event) {
-                event.preventDefault();
-                let item_path = keys[position + 1];
-                let gallery_path = gallery;
-                me.openLightbox(gallery_path, item_path);
-            });
+            let direction = 1;
+            let item_path = keys[position + direction];
+            this.createButton(item_path, gallery, direction)
         }
 
         //Open dialog if not already open
         if (!dialog.hasAttribute("open")) {
             dialog.showModal();
         }
+    }
+
+    createButton(path, gallery, direction) {
+        let me = this;
+        let name = (direction == 1) ? "next" : "prev";
+        let button = document.createElement("button");
+        let dialog = document.querySelector("#lightbox");
+        button.classList.add(`${name}-button`);
+        button.classList.add("control");
+        button.textContent = name;
+        dialog.appendChild(button);
+
+        //Add event listener
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
+            me.openLightbox(gallery, path);
+        });
     }
 }
 
@@ -101,8 +99,7 @@ function addDialog() {
     dialog.appendChild(text);
 
     // add the newly created element and its content into the DOM 
-    let footer = document.querySelector(".site-footer");
-    footer.appendChild(dialog);
+    document.body.appendChild(dialog);
 }
 
 function setupGalleries(lightbox) {
@@ -114,8 +111,7 @@ function setupGalleries(lightbox) {
         let item_list = new Map();
         let items = element.querySelectorAll(lightbox.item_string);
 
-        // Iterate over each item in container and add to an associative array
-        // key = link href and value is image alt text
+        // Iterate over each item in container and add to a map
         items.forEach((item, i) => {
             item.dataset.gallery = index;
             let alt = item.querySelector('img').alt;
@@ -123,9 +119,7 @@ function setupGalleries(lightbox) {
 
             item.addEventListener('click', function (event) {
                 event.preventDefault();
-                let item_path = this.href;
-                let gallery_path = this.dataset.gallery;
-                lightbox.openLightbox(gallery_path, item_path);
+                lightbox.openLightbox(this.dataset.gallery, this.href);
             });
         });
 
