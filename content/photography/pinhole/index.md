@@ -6,6 +6,13 @@ date = 2019-03-13
 [extra]
 author = "Berwyn"
 banner = "/img/banners/pinhole_banner.jpg"
+[extra.assets]
+high_res001_clean = {alt = "Dark tree trunks silhouetted against bright sunlight."}
+high_res2001_clean = {alt = "Plant pots with lables."}
+high_res002_clean = {alt = "Sprouting potatoes and gardening implements on outdoor table."}
+high_res2002_clean = {alt = "Pale flowers against dark foliage."}
+high_res004_clean = {alt = "Self-portrait of the photographer in bright classroom."}
+high_res2003_clean = {alt = "Pale Lamprocapnos spectabilis flowers against dark foliage."}
 +++
 
 
