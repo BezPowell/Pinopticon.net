@@ -5,7 +5,7 @@
   {% for post in section.pages | sort(attribute="date") | reverse %}
     <article class="post">
       <header>
-        <h2 class="post-title"><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+        <h2 class="post-title" id="post-{{ loop.index0}}"><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
         <p class="meta">
           <span>Posted on <time class="entry-date published" datetime="{{ post.date }}">{{ post.date }}</time></span>
           {% if post.taxonomies.categories %}
@@ -21,7 +21,7 @@
       {% if post.description %}
       <div class="excerpt">
         <p>{{ post.description }}</p>
-        <p><a href="{{ post.permalink }}">Continue Reading</a></p>
+        <p><a href="{{ post.permalink }}" aria-describedby="post-{{ loop.index0}}">Continue Reading</a></p>
       </div>
       {% endif %}
     </article>
