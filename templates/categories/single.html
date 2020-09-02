@@ -8,6 +8,18 @@
     {% include "includes/branding__taxonomy.html" %}
 {% endblock branding %}
 
+{% block breadcrumbs %}
+  <li>
+    <a href="/">home</a>
+  </li>
+  <li>
+    <a href="/{{ taxonomy.name }}">{{ taxonomy.name }}</a>
+  </li>
+  <li>
+    <a href="/{{ current_path }}" aria-current="location">{{ term.slug }}</a>
+  </li>
+{% endblock breadcrumbs %}
+
 {% block content %}
   {% include "includes/content__term_single.html" %}
   {% include "includes/footer.html" %}

@@ -16,9 +16,10 @@ body {
   display: grid;
 
   grid-template-columns: minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2)) minmax(0, 1fr) minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2));
-  grid-template-rows: 100vh 1fr auto;
+  grid-template-rows: 100vh auto 1fr auto;
   grid-template-areas:
     "header header header"
+    ". breadcrumbs ."
     ". main ."
     "footer footer footer"
   ;
@@ -31,9 +32,10 @@ body {
 .post,
 .archive {
   grid-template-columns: minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2)) minmax(0, 1fr) minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2));
-  grid-template-rows: 100vh 1fr repeat(2, auto);
+  grid-template-rows: 100vh auto 1fr repeat(2, auto);
   grid-template-areas:
     "header header header"
+    ". breadcrumbs ."
     ". main ."
     ". sidebar ."
     "footer footer footer"
@@ -44,10 +46,11 @@ body {
   @media screen and (min-width: $breakpoint-large) {
     grid-template-areas:
       "header header header header"
+      ". breadcrumbs . ."
       ". main sidebar ."
       "footer footer footer footer";
     grid-template-columns: minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2)) minmax(0, 1fr) 40ch minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2));
-    grid-template-rows: 100vh 1fr auto;
+    grid-template-rows: 100vh auto 1fr auto;
   }
 }
 
@@ -60,9 +63,13 @@ body {
   padding: calc(var(--site-padding) / 2) var(--site-padding);
 }
 
+.breadcrumbs {
+  grid-area: breadcrumbs;
+}
+
 .site-content {
   grid-area: main;
-  margin: $base-line-height 0;
+  margin: 0 0 $base-line-height;
 }
 
 .site-sidebar {

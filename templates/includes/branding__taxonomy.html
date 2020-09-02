@@ -1,4 +1,6 @@
-{% if name %}
-  <h1 class="site-title">{{ name }}</h1>
+{% if term.name %}
+  <h1 class="site-title">{{ term.name }}</h1>
+{% else %}
+  <h1 class="site-title">{{ taxonomy.name }}</h1>
 {% endif %}
   <p class="site-description"><a href="/" rel="home">Pinopticon.net</a></p>

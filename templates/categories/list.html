@@ -4,6 +4,15 @@
     {% include "includes/skip_content.html" %}
 {% endblock skip_content %}
 
+{% block breadcrumbs %}
+  <li>
+    <a href="/">home</a>
+  </li>
+  <li>
+    <a href="/{{ current_path }}" aria-current="location">{{ taxonomy.name }}</a>
+  </li>
+{% endblock breadcrumbs %}
+
 {% block branding %}
     {% include "includes/branding__taxonomy.html" %}
 {% endblock branding %}

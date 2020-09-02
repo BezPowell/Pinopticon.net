@@ -37,6 +37,14 @@
       {% include "includes/nav.html" %}
     </nav>
 
+    <nav aria-label="breadcrumbs" class="breadcrumbs">
+      <ol>
+      {% block breadcrumbs %}
+        {{ macros::breadcrumb(path=this.components | safe) }}
+      {% endblock breadcrumbs %}
+      </ol>
+    </nav>
+
     {% block content %}
         {% include "includes/content__front.html" %}
     {% endblock content %}
