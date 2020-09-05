@@ -1,7 +1,6 @@
 +++
 title = "Censorship and Staying Safe Online"
 date = 2019-03-09
-template = "post.html"
 [taxonomies]
 categories = ["Philosophy"]
 
