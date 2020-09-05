@@ -23,23 +23,23 @@ class Lightbox {
         position_text.textContent = `Image  ${position + 1} of ${length}.`;
 
         //Delete old buttons
-        let old_buttons = dialog.querySelectorAll(".control")
-        old_buttons.forEach((item) => {
-            item.remove();
-        });
+        let controls = dialog.querySelector(".controls")
+        while (controls.firstChild) {
+            controls.firstChild.remove();
+        }
 
         //Add buttons
         let keys = Array.from(this.galleries[gallery].keys());
         if (position > 0) {
             let direction = -1;
             let item_path = keys[position + direction];
-            this.createButton(item_path, gallery, direction)
+            this.createButton(item_path, gallery, direction, controls)
 
         }
         if (position < length - 1) {
             let direction = 1;
             let item_path = keys[position + direction];
-            this.createButton(item_path, gallery, direction)
+            this.createButton(item_path, gallery, direction, controls)
         }
 
         //Open dialog if not already open
@@ -48,15 +48,14 @@ class Lightbox {
         }
     }
 
-    createButton(path, gallery, direction) {
+    createButton(path, gallery, direction, controls) {
         let me = this;
         let name = (direction == 1) ? "next" : "prev";
         let button = document.createElement("button");
-        let dialog = document.querySelector("#lightbox");
         button.classList.add(`${name}-button`);
         button.classList.add("control");
         button.textContent = name;
-        dialog.appendChild(button);
+        controls.appendChild(button);
 
         //Add event listener
         button.addEventListener('click', function (event) {
@@ -97,6 +96,11 @@ function addDialog() {
     text.textContent = "Image x of x.";
     text.classList.add('number-text');
     dialog.appendChild(text);
+
+    // add controls
+    let controls = document.createElement("div");
+    controls.classList.add('controls');
+    dialog.appendChild(controls);
 
     // add the newly created element and its content into the DOM 
     document.body.appendChild(dialog);

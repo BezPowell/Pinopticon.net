@@ -6,6 +6,13 @@ date = 2019-03-13
 [extra]
 author = "Berwyn"
 banner = "/img/banners/pinhole_banner.jpg"
+[extra.assets]
+high_res001_clean = {alt = "high_res001_clean"}
+high_res2001_clean = {alt = "high_res2001_clean"}
+high_res002_clean = {alt = "high_res002_clean"}
+high_res2002_clean = {alt = "high_res2002_clean"}
+high_res004_clean = {alt = "high_res004_clean"}
+high_res2003_clean = {alt = "high_res2003_clean"}
 +++
 
 
