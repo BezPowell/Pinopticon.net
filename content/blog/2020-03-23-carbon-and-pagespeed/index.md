@@ -8,6 +8,7 @@ categories = ["Web"]
 # Custom data
 [extra]
 banner = "/img/banners/stairwell_banner.jpg"
+meta_desc = "Analysis of the page load performance and carbon generated from viewing various UK newspaper websites."
 +++
 <div class="text-block">
 

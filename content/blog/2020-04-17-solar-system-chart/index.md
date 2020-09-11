@@ -9,6 +9,7 @@ categories = ["Uncategorised"]
 # Custom data
 [extra]
 banner = "/img/banners/stairwell_banner.jpg"
+meta_desc = "A to-scale diagram of the solar system and all 8 planets."
 +++
 <div class="text-block">
 
