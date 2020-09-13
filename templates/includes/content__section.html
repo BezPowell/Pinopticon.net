@@ -2,7 +2,7 @@
   {% if section.content %}
     {{ section.content | safe }}
   {% endif %}
-  {% for post in section.pages | sort(attribute="date") | reverse %}
+  {% for post in paginator.pages | sort(attribute="date") | reverse %}
     <article class="post">
       <header>
         <h2 class="post-title" id="post-{{ loop.index0}}"><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
@@ -26,4 +26,20 @@
       {% endif %}
     </article>
   {% endfor %}
+  {% if paginator.next or paginator.previous %}
+  <nav aria-label="pagination">
+      <ul class="menu btn-bar">
+          {% if paginator.previous %}
+          <li>
+            <a href="{{ paginator.previous }}" class="btn reverse">Newer posts.</a>
+          </li>
+          {% endif %}
+          {% if paginator.next %}
+          <li>
+            <a href="{{ paginator.next }}" class="btn">Older posts.</a>
+          </li>
+          {% endif %}
+      </ul>
+  </nav>
+  {% endif %}
 </main>
