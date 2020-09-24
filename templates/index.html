@@ -18,7 +18,8 @@
     {% endif %}
     {% endblock meta %}
 
-    <link rel="stylesheet" href="{{ get_url(path='css/main.css') }}" />
+    <link rel="stylesheet" href="{{ get_url(path='css/main.css') }}" media="screen" />
+    <link rel="stylesheet" href="{{ get_url(path='css/print.css') }}" media="print" />
     <link rel="icon" type="image/svg+xml" href="{{ get_url(path='img/favicon.svg') }}">
 
     {% if this.title %}
