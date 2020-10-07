@@ -2,7 +2,7 @@
   {% if section.content %}
     {{ section.content | safe }}
   {% endif %}
-  {% for post in paginator.pages | sort(attribute="date") | reverse %}
+  {% for post in paginator.pages %}
     <article class="post">
       <header>
         <h2 class="post-title" id="post-{{ loop.index0}}"><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
