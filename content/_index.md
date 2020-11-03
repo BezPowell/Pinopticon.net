@@ -7,6 +7,7 @@ date = 2019-03-09
 [extra]
 author = "Berwyn"
 banner = "/img/banners/banner_trees.jpg"
+meta_desc = "Berwyn Powell's personal website. Featuring Photography, Philosophy, and writings about web development."
 +++
 <div class="text-block">
 

@@ -1,6 +1,7 @@
 +++
 title = "Labyrinth Sprint"
 date = 2020-10-07
+updated = 2020-11-03
 description = "I've just launched my pacman and roguelike inspired arcade game Labyrinth Sprint on Kickstarter."
 [taxonomies]
 categories = ["Games"]
@@ -12,7 +13,7 @@ meta_desc = "I've just launched my pacman and roguelike inspired arcade game Lab
 +++
 <div class="text-block">
 
-![Pixel are character running through maze and being cornered by several monsters](screenshot.png)
+![Pixel art character running through maze and being cornered by several monsters](screenshot.png)
 
 Since leaving my job as a web developer at the start of lockdown I've been trying to teach myself game development and the Rust programming language. Being somewhat obsessed with classic RPGs I started learning how to make roguelikes, but then inspiration struck when I was out for one of my walks. I suffer from chronic back pain, and the thing that aggravates it more than anything else is remaining stationary for long periods of time; so unless it was absolutely bucketing it down I would be out everyday for the one hours' worth of exercise allowed under UK lock down rules.
 

@@ -1,6 +1,11 @@
 <main id="content" class="site-content">
   <article>
     {{ page.content | safe }}
-    <footer class="meta">Posted on <time class="entry-date published" datetime="{{ page.date }}">{{ page.date }}</time></footer>
+    <footer class="meta">
+      Posted on <time class="entry-date published" datetime="{{ page.date }}">{{ page.date }}</time>
+      {% if page.updated %}
+      , updated on <time class="entry-date updated" datetime="{{ page.updated }}">{{ page.updated }}</time>
+      {% endif %}
+    </footer>
   </article>
 </main>
