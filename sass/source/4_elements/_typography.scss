@@ -28,7 +28,7 @@
 );
 
 body {
-    font-family: 'Muli', sans-serif;
+    font-family: $font_family_body;
     color: var(--text-colour);
 
     @include type-setting(0);
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 
   color: var(--main-colour);
 
-  font-family: 'Lato', sans-serif;
+  font-family: $font_family_heading;
   font-weight: 400;
 
   break-after: avoid;
