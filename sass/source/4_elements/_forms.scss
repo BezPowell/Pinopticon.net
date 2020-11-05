@@ -7,19 +7,18 @@ button,
 textarea {
   @include type-setting(0);
   font-family: $font-family_body;
-  
   line-height: $base-line-height;
+
   padding: (calc(#{$base-line-height / 4} - 2px) calc(#{$base-line-height / 2} - 2px));
   border: 2px solid;
+  border-radius: 3px;
   width: 100%;
   max-width: 40ch;
 
   background: transparent;
   color: inherit;
 
-  cursor: pointer;
-
-  transition: color 0.2s;
+  transition: border 0.2s, color 0.2s, background-color 0.2s;
 
   &:invalid,
   &:out-of-range {
@@ -27,9 +26,15 @@ textarea {
   }
 
   //Focus last so it overrides :invalid
-  &:focus-within {
+  &:focus {
     color: var(--main-colour);
+    outline-style: none;
+    border-style: dashed;
   }
+}
+
+textarea {
+  resize: vertical;
 }
 
 input[type="checkbox"],
@@ -38,12 +43,32 @@ input[type="radio"] {
   float: left;
   margin: 0.25rem 0.5rem;
   margin-inline-start: 0;
+
+  &:focus {
+    border-style: solid;
+    outline-style: dashed;
+  }
 }
 
 input[type="submit"],
+input[type="reset"],
 button {
+  border-style: outset;
+
   &:hover {
     color: var(--main-colour);
+    background-color: var(--background-colour_contrast);
+  }
+
+  &:focus {
+    border-style: outset;
+    outline-style: dashed;
+    background-color: var(--background-colour_contrast);
+  }
+
+  &:active {
+    border-style: inset;
+    background-color: var(--background-colour);
   }
 }
 
