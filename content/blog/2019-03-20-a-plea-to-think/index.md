@@ -2,12 +2,9 @@
 title = "A plea to think"
 date = 2019-03-20
 template = "post.html"
+
 [taxonomies]
 categories = ["Uncategorised"]
-
-# Custom data
-[extra]
-banner = "/img/banners/stairwell_banner.jpg"
 +++
 <div class="text-block">
   <blockquote>

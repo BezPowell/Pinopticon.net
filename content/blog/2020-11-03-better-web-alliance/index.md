@@ -2,13 +2,9 @@
 title = "Better Web Alliance"
 date = 2020-11-03
 description = "I've just launched a new website hoping to raise awareness of the actions developers can take to make the web a better place."
+
 [taxonomies]
 categories = ["Web"]
-
-# Custom data
-[extra]
-banner = "/img/banners/stairwell_banner.jpg"
-meta_desc = "I've just launched a new website hoping to raise awareness of the actions developers can take to make the web a better place."
 +++
 <div class="text-block">
 

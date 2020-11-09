@@ -3,12 +3,9 @@ title = "Labyrinth Sprint"
 date = 2020-10-07
 updated = 2020-11-03
 description = "I've just launched my pacman and roguelike inspired arcade game Labyrinth Sprint on Kickstarter."
+
 [taxonomies]
 categories = ["Games"]
-
-# Custom data
-[extra]
-banner = "/img/banners/stairwell_banner.jpg"
 +++
 <div class="text-block">
 
