@@ -1,13 +1,12 @@
 +++
 title = "Home"
-description = "Photography & Philosophy from Berwyn Powell"
+description = "Berwyn Powell's personal website. Featuring Photography, Philosophy, and writings about web development."
 date = 2019-03-09
 
 # Custom data
 [extra]
 author = "Berwyn"
 banner = "/img/banners/banner_trees.jpg"
-meta_desc = "Berwyn Powell's personal website. Featuring Photography, Philosophy, and writings about web development."
 +++
 <div class="text-block">
 

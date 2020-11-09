@@ -1,14 +1,14 @@
 +++
 title = "Carbon and pagespeed in newspaper websites"
 date = 2020-03-23
-description = "With many in the west currently self-isolating due to the ongoing COVID-19 pandemic, internet use is growing rapidly. In light of this strain on the internet, I decided it would be an interesting experiment to analyse the page load performance and carbon generated from viewing a common and seemingly simple form of site – newspaper websites."
+description = "Analysis of the page load performance and carbon generated from viewing various UK newspaper websites."
 [taxonomies]
 categories = ["Web"]
 
 # Custom data
 [extra]
 banner = "/img/banners/stairwell_banner.jpg"
-meta_desc = "Analysis of the page load performance and carbon generated from viewing various UK newspaper websites."
+excerpt = "With many in the west currently self-isolating due to the ongoing COVID-19 pandemic, internet use is growing rapidly. In light of this strain on the internet, I decided it would be an interesting experiment to analyse the page load performance and carbon generated from viewing a common and seemingly simple form of site – newspaper websites."
 +++
 <div class="text-block">
 

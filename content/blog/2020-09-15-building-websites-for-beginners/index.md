@@ -9,7 +9,6 @@ categories = ["Web"]
 # Custom data
 [extra]
 banner = "/img/banners/stairwell_banner.jpg"
-meta_desc = "I have recently started writing a book aiming to provide a gentle introduction to building websites for complete beginners."
 +++
 <div class="text-block">
 

@@ -2,6 +2,7 @@
 base_url = "https://pinopticon.net"
 
 title="Pinopticon.net"
+description="Photography & Philosophy from Berwyn Powell"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true

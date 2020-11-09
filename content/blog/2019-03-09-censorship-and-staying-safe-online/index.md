@@ -1,13 +1,14 @@
 +++
 title = "Censorship and Staying Safe Online"
 date = 2019-03-09
-description = "The UK Government has recently announced their aim to make Britain ‘the Safest place to be Online’. While protecting people online is a laudable goal, their plan proposes to grant powers of censorship over online content and force age verification checks for things they deem 'inappropriate'. Censorship is a very slippery slope."
+description = "My thoughts on the UK Governments to make Britain ‘the Safest place to be Online’."
 [taxonomies]
 categories = ["Philosophy"]
 
 # Custom data
 [extra]
 banner = "/img/banners/stairwell_banner.jpg"
+excerpt = "The UK Government has recently announced their aim to make Britain ‘the Safest place to be Online’. While protecting people online is a laudable goal, their plan proposes to grant powers of censorship over online content and force age verification checks for things they deem 'inappropriate'. Censorship is a very slippery slope."
 +++
 <blockquote class="wp-block-quote">
   <p>

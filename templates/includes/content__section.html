@@ -18,9 +18,9 @@
           {% endif %}
         </p>
       </header>
-      {% if post.description %}
+      {% if post.extra.excerpt or post.description %}
       <div class="excerpt">
-        <p>{{ post.description }}</p>
+        <p>{{ post.extra.excerpt | default(value=post.description) | safe }}</p>
         <p><a href="{{ post.permalink }}" aria-describedby="post-{{ loop.index0}}">Continue Reading</a></p>
       </div>
       {% endif %}

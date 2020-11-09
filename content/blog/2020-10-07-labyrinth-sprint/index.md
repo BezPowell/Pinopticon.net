@@ -9,7 +9,6 @@ categories = ["Games"]
 # Custom data
 [extra]
 banner = "/img/banners/stairwell_banner.jpg"
-meta_desc = "I've just launched my pacman and roguelike inspired arcade game Labyrinth Sprint on Kickstarter."
 +++
 <div class="text-block">
 

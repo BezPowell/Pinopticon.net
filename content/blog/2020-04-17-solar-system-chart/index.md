@@ -1,7 +1,7 @@
 +++
 title = "Scale chart of the solar system planets"
 date = 2020-04-17
-description = "I thought it might be interesting to make an image showing a to-scale diagram of the sun and planets. I was anticipating a large image, but was completely unprepared for quite how big it was going to be…"
+description = "A to-scale diagram of the solar system and all 8 planets."
 template = "page.html"
 [taxonomies]
 categories = ["Uncategorised"]
@@ -9,7 +9,7 @@ categories = ["Uncategorised"]
 # Custom data
 [extra]
 banner = "/img/banners/stairwell_banner.jpg"
-meta_desc = "A to-scale diagram of the solar system and all 8 planets."
+excerpt = "I thought it might be interesting to make an image showing a to-scale diagram of the sun and planets. I was anticipating a large image, but was completely unprepared for quite how big it was going to be…"
 +++
 <div class="text-block">
 
