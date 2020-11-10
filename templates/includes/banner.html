@@ -1,10 +1,19 @@
-{% set parent = this.ancestors[1] | default(value="_index.md") %}
-{% set parent = get_section(path=parent, metadata_only=true) %}
+{# determine banner image #}
 {% if this.extra.banner %}
+  {# if this has banner use that #}
   {% set file = this.extra.banner %}
-{% else %}
-  {% set file = parent.extra.banner | default(value="/img/banners/banner_trees.jpg") %}
+{% elif this.ancestors %}
+  {# otherwise walk back over ancestors and use first banner found #}
+  {% for parent in this.ancestors | reverse %}
+    {% set sec = get_section(path=parent, metadata_only=true) %}
+    {% if sec.extra.banner %}
+      {% set file = sec.extra.banner %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
 {% endif %}
+{# if sitll nothing was found use default #}
+{% set file = file | default(value="/img/banners/banner_trees.jpg") %}
 {% set banner = "../static" ~ file %}
 
 <picture class="banner">
