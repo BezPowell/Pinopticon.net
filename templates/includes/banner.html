@@ -12,7 +12,7 @@
     {% endif %}
   {% endfor %}
 {% endif %}
-{# if sitll nothing was found use default #}
+{# if still nothing was found use default #}
 {% set file = file | default(value="/img/banners/banner_trees.jpg") %}
 {% set banner = "../static" ~ file %}
 
