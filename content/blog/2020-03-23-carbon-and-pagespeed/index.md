@@ -42,12 +42,12 @@ Fields marked NaN are where the tool was unable to get a result; from experience
             <tr>
                 <th scope="col">Title</th>
                 <th scope="col">Circulation</th>
-                <th scope="col">Pagespeed<br />Insights (Mobile)</th>
-                <th scope="col">Pagespeed<br />Insights (Desktop)</th>
+                <th scope="col">Pagespeed Insights (Mobile)</th>
+                <th scope="col">Pagespeed Insights (Desktop)</th>
                 <th scope="col">Pingdom Tools</th>
-                <th scope="col">Website Carbon<br />Calculator (g)</th>
-                <th scope="col">Size<br />(MB)</th>
-                <th scope="col">Cost to<br />View ($)</th>
+                <th scope="col">Website Carbon Calculator (g)</th>
+                <th scope="col">Size (MB)</th>
+                <th scope="col">Cost to View ($)</th>
             </tr>
         </thead>
         <tbody>
