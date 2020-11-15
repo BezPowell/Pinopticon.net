@@ -1,14 +1,14 @@
 +++
 title = "Carbon and pagespeed in newspaper websites - Better Web Alliance Edition"
 date = 2020-11-13
+updated = 2020-11-15
 description = "Follow-up analysis of the page load performance and carbon generated from viewing various UK newspaper websites using the Better Web Alliance metrics."
-
 [taxonomies]
 categories = ["Web"]
 
 # Custom data
 [extra]
-excerpt = "With many in the west currently self-isolating due to the ongoing COVID-19 pandemic, internet use is growing rapidly. In light of this strain on the internet, I decided it would be an interesting experiment to analyse the page load performance and carbon generated from viewing a common and seemingly simple form of site – newspaper websites."
+excerpt = "A little over six months ago, right at the start of the coronavirus lockdown here in the UK, I performed an analysis of the page load performance and carbon generated from viewing various UK newspaper websites. Having just launched the Better Web Alliance, I decided to revisit the analysis, including the new Accessibility and Privacy metrics."
 +++
 <div class="text-block">
 
@@ -46,7 +46,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
             <tr>
                 <th scope="col">Website</th>
                 <th scope="col" colspan="2">Pagespeed Insights</th>
-                <th scope="col">Website Carbon<br />Calculator</th>
+                <th scope="col">Website Carbon Calculator</th>
                 <th scope="col" colspan="3">WAVE</th>
                 <th scope="col" colspan="3">Blacklight</th>
                 <th scope="col">Size</th>
@@ -62,7 +62,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <th scope="col">Trackers</th>
                 <th scope="col">3rd Party Cookies</th>
                 <th scope="col">Other</th>
-                <th scope="col">Weight<br />(MB)</th>
+                <th scope="col">Weight (MB)</th>
             </tr>
         </thead>
         <tbody>
@@ -103,7 +103,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td class="bad">356</td>
                 <td>24</td>
                 <td>4</td>
-                <td>This website loads trackers on your computer that<br />are designed to evade third-party cookie blockers.<br />When you visit this site, it tells Facebook.<br />This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This website loads trackers on your computer that are designed to evade third-party cookie blockers. When you visit this site, it tells Facebook. This site allows Google Analytics to follow you across the internet.</td>
                 <td class="bad">15.2</td>
             </tr>
             <tr>
@@ -117,7 +117,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>31</td>
                 <td>24</td>
                 <td>4</td>
-                <td>This website loads trackers on your computer that<br />are designed to evade third-party cookie blockers.<br />When you visit this site, it tells Facebook.<br />This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This website loads trackers on your computer that are designed to evade third-party cookie blockers. When you visit this site, it tells Facebook. This site allows Google Analytics to follow you across the internet.</td>
                 <td>NaN</td>
             </tr>
             <tr>
@@ -130,7 +130,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>44</td>
                 <td class="good">4</td>
                 <td class="good">0</td>
-                <td>This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This site allows Google Analytics to follow you across the internet.</td>
                 <td>2.7</td>
             </tr>
             <tr>
@@ -143,7 +143,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>53</td>
                 <td class="good">4</td>
                 <td class="good">0</td>
-                <td>This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This site allows Google Analytics to follow you across the internet.</td>
                 <td>1.9</td>
             </tr>
             <tr>
@@ -183,7 +183,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>81</td>
                 <td>15</td>
                 <td>22</td>
-                <td>This website could be monitoring your keystrokes<br />and mouse clicks.<br />This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This website could be monitoring your keystrokes and mouse clicks. This site allows Google Analytics to follow you across the internet.</td>
                 <td>3.3</td>
             </tr>
             <tr>
@@ -196,7 +196,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>20</td>
                 <td>15</td>
                 <td>22</td>
-                <td>This website could be monitoring your keystrokes<br />and mouse clicks.<br />This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This website could be monitoring your keystrokes and mouse clicks. This site allows Google Analytics to follow you across the internet.</td>
                 <td>5.8</td>
             </tr>
             <tr>
@@ -209,7 +209,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>7</td>
                 <td>20</td>
                 <td>4</td>
-                <td>This website loads trackers on your computer that<br />are designed to evade third-party cookie blockers.<br />This website could be monitoring your keystrokes<br />and mouse clicks.<br />When you visit this site, it tells Facebook.<br />This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This website loads trackers on your computer that are designed to evade third-party cookie blockers. This website could be monitoring your keystrokes and mouse clicks. When you visit this site, it tells Facebook. This site allows Google Analytics to follow you across the internet.</td>
                 <td>3.3</td>
             </tr>
             <tr>
@@ -222,7 +222,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>2</td>
                 <td>20</td>
                 <td>4</td>
-                <td>This website loads trackers on your computer that<br />are designed to evade third-party cookie blockers.<br />This website could be monitoring your keystrokes<br />and mouse clicks.<br />When you visit this site, it tells Facebook.<br />This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This website loads trackers on your computer that are designed to evade third-party cookie blockers. This website could be monitoring your keystrokes and mouse clicks. When you visit this site, it tells Facebook. This site allows Google Analytics to follow you across the internet.</td>
                 <td>NaN</td>
              </tr>
             <tr>
@@ -235,7 +235,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>14</td>
                 <td class="bad">43</td>
                 <td class="bad">94</td>
-                <td>This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This site allows Google Analytics to follow you across the internet.</td>
                 <td>3.9</td>
             </tr>
             <tr>
@@ -249,7 +249,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>47</td>
                 <td class="bad">43</td>
                 <td class="bad">94</td>
-                <td>This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This site allows Google Analytics to follow you across the internet.</td>
                 <td>NaN</td>
             </tr>
             <tr>
@@ -262,7 +262,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>89</td>
                 <td>15</td>
                 <td>25</td>
-                <td>This website could be monitoring your keystrokes<br />and mouse clicks.<br />This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This website could be monitoring your keystrokes and mouse clicks. This site allows Google Analytics to follow you across the internet.</td>
                 <td>2.5</td>
             </tr>
             <tr>
@@ -276,7 +276,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>17</td>
                 <td>15</td>
                 <td>25</td>
-                <td>This website could be monitoring your keystrokes<br />and mouse clicks.<br />This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This website could be monitoring your keystrokes and mouse clicks. This site allows Google Analytics to follow you across the internet.</td>
                 <td>4.7</td>
             </tr>
             <tr>
@@ -289,7 +289,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>68</td>
                 <td>12</td>
                 <td>2</td>
-                <td>This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This site allows Google Analytics to follow you across the internet.</td>
                 <td>1.7</td>
             </tr>
             <tr>
@@ -303,7 +303,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>28</td>
                 <td>12</td>
                 <td>2</td>
-                <td>This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This site allows Google Analytics to follow you across the internet.</td>
                 <td>1.2</td>
             </tr>
             <tr>
@@ -342,7 +342,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>39</td>
                 <td>8</td>
                 <td>1</td>
-                <td>When you visit this site, it tells Facebook.<br />This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>When you visit this site, it tells Facebook. This site allows Google Analytics to follow you across the internet.</td>
                 <td>2.7</td>
             </tr>
             <tr>
@@ -356,7 +356,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>18</td>
                 <td>8</td>
                 <td>1</td>
-                <td>When you visit this site, it tells Facebook.<br />This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>When you visit this site, it tells Facebook. This site allows Google Analytics to follow you across the internet.</td>
                 <td>1.3</td>
             </tr>
             <tr>
@@ -369,7 +369,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>85</td>
                 <td>32</td>
                 <td>63</td>
-                <td>This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This site allows Google Analytics to follow you across the internet.</td>
                 <td>4.0</td>
             </tr>
             <tr>
@@ -383,7 +383,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>15</td>
                 <td>32</td>
                 <td>63</td>
-                <td>This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This site allows Google Analytics to follow you across the internet.</td>
                 <td>3.6</td>
             </tr>
             <tr>
@@ -396,7 +396,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>26</td>
                 <td>28</td>
                 <td>8</td>
-                <td>This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This site allows Google Analytics to follow you across the internet.</td>
                 <td>2.5</td>
             </tr>
             <tr>
@@ -410,7 +410,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>35</td>
                 <td>28</td>
                 <td>8</td>
-                <td>This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This site allows Google Analytics to follow you across the internet.</td>
                 <td>2.7</td>
             </tr>
             <tr>
@@ -423,7 +423,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>114</td>
                 <td>15</td>
                 <td>5</td>
-                <td>This website could be monitoring your keystrokes<br />and mouse clicks.<br />When you visit this site, it tells Facebook.<br />This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This website could be monitoring your keystrokes and mouse clicks. When you visit this site, it tells Facebook. This site allows Google Analytics to follow you across the internet.</td>
                 <td>4.5</td>
             </tr>
             <tr>
@@ -437,7 +437,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>76</td>
                 <td>15</td>
                 <td>5</td>
-                <td>This website could be monitoring your keystrokes<br />and mouse clicks.<br />When you visit this site, it tells Facebook.<br />This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>This website could be monitoring your keystrokes and mouse clicks. When you visit this site, it tells Facebook. This site allows Google Analytics to follow you across the internet.</td>
                 <td>NaN</td>
             </tr>
             <tr>
@@ -450,7 +450,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td class="good">0</td>
                 <td>18</td>
                 <td>19</td>
-                <td>When you visit this site, it tells Facebook.<br />This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>When you visit this site, it tells Facebook. This site allows Google Analytics to follow you across the internet.</td>
                 <td>4.4</td>
             </tr>
             <tr>
@@ -464,7 +464,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td>89</td>
                 <td>18</td>
                 <td>19</td>
-                <td>When you visit this site, it tells Facebook.<br />This site allows Google Analytics to follow<br />you across the internet.</td>
+                <td>When you visit this site, it tells Facebook. This site allows Google Analytics to follow you across the internet.</td>
                 <td>3.0</td>
             </tr>
             <tr>
@@ -530,7 +530,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
             <tr>
                 <th scope="col">Website</th>
                 <th scope="col" colspan="2">Pagespeed Insights</th>
-                <th scope="col">Website Carbon<br />Calculator</th>
+                <th scope="col">Website Carbon Calculator</th>
                 <th scope="col">Size</th>
             </tr>
             <tr>
@@ -538,7 +538,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <th scope="col">Mobile</th>
                 <th scope="col">Desktop</th>
                 <th scope="col">Grams (g)</th>
-                <th scope="col">Weight<br />(MB)</th>
+                <th scope="col">Weight (MB)</th>
             </tr>
         </thead>
         <tbody>
@@ -665,7 +665,9 @@ Fields marked NaN are where the tool was unable to get a result; from experience
     </table>
 </div>
 
-The results, particularly the shift since the last measurement, are very interesting. As anticipated, almost all of the sites have regressed on PageSpeed Insights scores; though some very much more so than the others, with the Daily Mirror losing a whole 45 points on desktop, compared to the 1 point for this site.
+The results, particularly the shift since the last measurement, are very interesting. As anticipated, almost all of the sites have regressed on PageSpeed Insights scores; though some very much more so than the others, with the Daily Mirror losing a whole 45 points on desktop, compared to the 1 point for this site; in the intervening 6 months or so since the original study I have made some slight performance improvements to the site but, as the scores were already very good, there was little low-hanging fruit left, so at a rough guess I would expect a shift of maybe at most 7 or 8 points for a page which has not changed at all.
+
+PageSpeed Insights is now measuring many more factors than it originally did, however, which could contribute to a bigger shift on different pages, so this is all pure speculation. It would be interesting to observe the same pages again in six months if PageSpeed Insights keeps the same metrics and scoring system.
 
 Total page weight and carbon (where data is available) seem to be a pretty even split between improvement and regression. The 2 notable outliers here being The Times, which has lost a whole 2.5mb of weight from the it's homepage, and The Sun which has gained an enormous 10.1mb of page weight.
 

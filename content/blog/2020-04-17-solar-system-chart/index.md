@@ -2,8 +2,6 @@
 title = "Scale chart of the solar system planets"
 date = 2020-04-17
 description = "A to-scale diagram of the solar system and all 8 planets."
-
-template = "page.html"
 [taxonomies]
 categories = ["Uncategorised"]
 
