@@ -1,8 +1,8 @@
 .btn {
     padding: #{$base-line-height / 2} 1ch;
     display: inline-block;
-    background-color: var(--main-colour);
-    color: var(--background-colour);
+    background-color: var(--colour-main);
+    color: var(--colour-background);
 }
 
 a.btn:not(.reverse) {

@@ -1,5 +1,5 @@
 .site-header {
-  --text-colour: var(--main-colour);
+  --colour-text: var(--colour-main);
 
   display: grid;
   grid-template-columns: 1fr max-content;
@@ -20,8 +20,8 @@
 
   padding: var(--site-padding) calc(var(--site-padding) / 2);
 
-  background-color: var(--background-colour_transparent_dark);
-  color: var(--text-colour);
+  background-color: var(--colour-background_semi-trans);
+  color: var(--colour-text);
 
   @media screen and (min-width: $breakpoint-large) {
     transform: rotate(180deg);

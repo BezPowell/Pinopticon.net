@@ -29,7 +29,7 @@
 
 body {
     font-family: $font_family_body;
-    color: var(--text-colour);
+    color: var(--colour-text);
 
     @include type-setting(0);
 }
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: $base-line-height;
   margin-bottom: $base-line-height;
 
-  color: var(--main-colour);
+  color: var(--colour-main);
 
   font-family: $font_family_heading;
   font-weight: 400;

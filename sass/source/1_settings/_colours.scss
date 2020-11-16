@@ -1,14 +1,28 @@
-// Color palette
-$colours: (
-    "colours": (
-        "main": #f17381,
-        "contrast": #da76c3
+// Colour palette
+$palette-dark: (
+    "main": (
+        "00": #f17381,
     ),
-    "monotones": (
-        "base1":           #081b23,
-        "base1_transparent": rgba(#081b23, 0.7),
-        "base1_transparent_dark": rgba(#081b23, 0.9),
-        "base2": #0f2129,
-        "base4":           #5a9795,
+    "contrast": (
+        "00": #da76c3
+    ),
+    "base": (
+        "00": #081b23,
+        "00__trans": rgba(#081b23, 0.7),
+        "00__semi-trans": rgba(#081b23, 0.9),
+        "01": #0f2129,
+        "04": #5a9795,
     )
 );
+
+@mixin print-palette($palette) {
+    // Split palette into shades
+    @each $hue, $values in $palette {
+
+        // and then split each shade into values and hex codes
+        @each $value, $hex in $values {
+            $varname: $hue + "_"+ $value;
+            --palette-#{$varname}: #{$hex};
+        }
+    }
+}
