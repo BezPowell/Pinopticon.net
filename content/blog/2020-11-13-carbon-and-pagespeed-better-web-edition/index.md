@@ -41,6 +41,148 @@ Fields marked NaN are where the tool was unable to get a result; from experience
 
 {{ table(path="content/blog/2020-11-13-carbon-and-pagespeed-better-web-edition/results.json") }}
 
+<div class="table-wrapper">
+    <table>
+        <caption>Change in scores since 2020-03-23.</caption>
+        <thead>
+            <tr>
+                <th scope="col">Website</th>
+                <th scope="col" colspan="2">Pagespeed Insights</th>
+                <th scope="col">Website Carbon Calculator</th>
+                <th scope="col">Size</th>
+            </tr>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Mobile</th>
+                <th scope="col">Desktop</th>
+                <th scope="col">Grams (g)</th>
+                <th scope="col">Weight (MB)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"><a href="https://www.metro.news/">Metro</a></th>
+                <td class="bad">-18</td>
+                <td class="bad">-22</td>
+                <td class="bad">+0.16</td>
+                <td class="bad">+0.6</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="https://www.thesun.co.uk/">The Sun</a></th>
+                <td class="good">+10</td>
+                <td class="good">+28</td>
+                <td class="good">-0.21</td>
+                <td class="bad">+10.1</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://dailymail.co.uk/">Daily Mail</a></th>
+                <td class="bad">-8</td>
+                <td class="bad">-3</td>
+                <td>NaN</td>
+                <td class="good">-1.1</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="https://www.standard.co.uk/">Evening Standard</a></th>
+                <td class="bad">-15</td>
+                <td class="bad">-29</td>
+                <td class="bad">+0.54</td>
+                <td class="bad">+0.4</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://mirror.co.uk/">Daily Mirror</a></th>
+                <td class="bad">-9</td>
+                <td class="bad">-45</td>
+                <td>NaN</td>
+                <td class="bad">+1.1</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="https://www.thetimes.co.uk/">The Times/a></th>
+                <td>NaN</td>
+                <td>NaN</td>
+                <td class="good">-0.63</td>
+                <td class="good">-2.5</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://www.express.co.uk/">Daily Express</a></th>
+                <td class="bad">-5</td>
+                <td class="bad">-14</td>
+                <td>NaN</td>
+                <td class="bad">+1.1</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://www.dailystar.co.uk/">Daily Star</a></th>
+                <td class="bad">-12</td>
+                <td class="bad">-28</td>
+                <td>NaN</td>
+                <td class="good">-0.7</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://inews.co.uk/">i</a></th>
+                <td class="bad">-3</td>
+                <td class="good">+19</td>
+                <td class="bad">+0.63</td>
+                <td class="good">-0.5</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="https://www.ft.com/">Financial Times</a></th>
+                <td class="good">+13</td>
+                <td class="bad">-15</td>
+                <td class="good">-0.11</td>
+                <td class="good">-1.7</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="https://theguardian.com/">The Guardian</a></th>
+                <td class="bad">-9</td>
+                <td class="good">+7</td>
+                <td class="good">-0.05</td>
+                <td class="good">-0.6</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://www.dailyrecord.co.uk/">Daily Record</a></th>
+                <td class="bad">-16</td>
+                <td class="bad">-48</td>
+                <td>NaN</td>
+                <td class="bad">+1.9</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="http://www.cityam.com/">City A.M.</a></th>
+                <td class="bad">-15</td>
+                <td class="bad">-20</td>
+                <td>NaN</td>
+                <td class="bad">+0.9</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="https://www.independent.co.uk/">The Independent</a></th>
+                <td class="bad">-3</td>
+                <td class="bad">-21</td>
+                <td >NaN</td>
+                <td class="bad">+0.4</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="https://www.telegraph.co.uk/">The Daily Telegraph</a></th>
+                <td class="bad">-19</td>
+                <td class="good">+2</td>
+                <td >NaN</td>
+                <td class="bad">+1.5</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="https://www.bbc.com/news">BBC News</a></th>
+                <td class="bad">-12</td>
+                <td class="bad">-2</td>
+                <td class="good">-0.09</td>
+                <td class="good">-1.1</td>
+            </tr>
+            <tr>
+                <th scope="row"><a href="https://pinopticon.net/">Pinopticon.net</a></th>
+                <td class="bad">-4</td>
+                <td class="bad">-1</td>
+                <td class="bad">+0.17</td>
+                <td class="bad">+0.08</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 The results, particularly the shift since the last measurement, are very interesting. As anticipated, almost all of the sites have regressed on PageSpeed Insights scores; though some very much more so than the others, with the Daily Mirror losing a whole 45 points on desktop, compared to the 1 point for this site; in the intervening 6 months or so since the original study I have made some slight performance improvements to the site but, as the scores were already very good, there was little low-hanging fruit left, so at a rough guess I would expect a shift of maybe at most 7 or 8 points for a page which has not changed at all.
 
 PageSpeed Insights is now measuring many more factors than it originally did, however, which could contribute to a bigger shift on different pages, so this is all pure speculation. It would be interesting to observe the same pages again in six months if PageSpeed Insights keeps the same metrics and scoring system.
