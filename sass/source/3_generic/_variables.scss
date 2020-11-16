@@ -7,13 +7,13 @@ html {
 }
 
 body {
-  --colour-text: var(--palette-base_04);
-  --colour-background: var(--palette-base_00);
-  --colour-background_trans: var(--palette-base_00__trans);
-  --colour-background_semi-trans: var(--palette-base_00__semi-trans);
+  --colour-text: var(--palette-base_4);
+  --colour-background: var(--palette-base_0);
+  --colour-background_trans: var(--palette-base_0__trans);
+  --colour-background_semi-trans: var(--palette-base_0__semi-trans);
   --colour-background_contrast: var(--palette-base_01);
-  --colour-main: var(--palette-main_00);
-  --colour-contrast: var(--palette-contrast_00);
+  --colour-main: var(--palette-main_0);
+  --colour-contrast: var(--palette-contrast_0);
 
   --site-padding: #{$base-line-height};
 }
