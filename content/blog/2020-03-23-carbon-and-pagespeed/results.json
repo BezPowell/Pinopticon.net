@@ -1,0 +1,202 @@
+{
+    "header": [
+        {
+            "Title": 1,
+            "Circulation": 1,
+            "Pagespeed Insights (Mobile)": 1,
+            "Pagespeed Insights (Desktop)": 1,
+            "Pingdom Tools": 1,
+            "Website Carbon Calculator (g)": 1,
+            "Size (MB)": 1,
+            "Cost to View ($)": 1
+        }
+    ],
+    "body": [
+        {
+            "Title": "<a href=\"https://www.metro.news/\">Metro</a>",
+            "Circulation": "1426535",
+            "Pagespeed Insights (Mobile)": "46",
+            "Pagespeed Insights (Desktop)": "95",
+            "Pingdom Tools": 77,
+            "Website Carbon Calculator (g)": "1.72",
+            "Size (MB)": 2.9,
+            "Cost to View ($)": "$0.0193"
+        },
+        {
+            "Title": "<a href=\"https://www.thesun.co.uk/\">The Sun</a>",
+            "Circulation": "1250634",
+            "Pagespeed Insights (Mobile)": "5",
+            "Pagespeed Insights (Desktop)": "24",
+            "Pingdom Tools": 63,
+            "Website Carbon Calculator (g)": "2.51",
+            "Size (MB)": 5.1,
+            "Cost to View ($)": "$0.0340"
+        },
+        {
+            "Title": "<a href=\"http://dailymail.co.uk/\">Daily Mail</a>",
+            "Circulation": "1169241",
+            "Pagespeed Insights (Mobile)": "20",
+            "Pagespeed Insights (Desktop)": "42",
+            "Pingdom Tools": 60,
+            "Website Carbon Calculator (g)": "NaN",
+            "Size (MB)": 3.8,
+            "Cost to View ($)": "$0.0253"
+        },
+        {
+            "Title": "<a href=\"https://www.standard.co.uk/\">Evening Standard</a>",
+            "Circulation": "798168",
+            "Pagespeed Insights (Mobile)": "36",
+            "Pagespeed Insights (Desktop)": "72",
+            "Pingdom Tools": 61,
+            "Website Carbon Calculator (g)": "2.04",
+            "Size (MB)": 2.8,
+            "Cost to View ($)": "$0.0186"
+        },
+        {
+            "Title": "<a href=\"http://mirror.co.uk/\">Daily Mirror</a>",
+            "Circulation": "451466",
+            "Pagespeed Insights (Mobile)": "20",
+            "Pagespeed Insights (Desktop)": "70",
+            "Pingdom Tools": 66,
+            "Website Carbon Calculator (g)": "NaN",
+            "Size (MB)": 2.2,
+            "Cost to View ($)": "$0.0147"
+        },
+        {
+            "Title": "<a href=\"https://www.thetimes.co.uk/\">The Times</a>",
+            "Circulation": "368929",
+            "Pagespeed Insights (Mobile)": "NaN",
+            "Pagespeed Insights (Desktop)": "Nan",
+            "Pingdom Tools": 62,
+            "Website Carbon Calculator (g)": "3.04",
+            "Size (MB)": 5.8,
+            "Cost to View ($)": "$0.0386"
+        },
+        {
+            "Title": "<a href=\"http://www.express.co.uk/\">Daily Express</a>",
+            "Circulation": "296079",
+            "Pagespeed Insights (Mobile)": "14",
+            "Pagespeed Insights (Desktop)": "49",
+            "Pingdom Tools": 66,
+            "Website Carbon Calculator (g)": "NaN",
+            "Size (MB)": 2.8,
+            "Cost to View ($)": "$0.0186"
+        },
+        {
+            "Title": "<a href=\"http://www.dailystar.co.uk/\">Daily Star</a>",
+            "Circulation": "277237",
+            "Pagespeed Insights (Mobile)": "24",
+            "Pagespeed Insights (Desktop)": "65",
+            "Pingdom Tools": 67,
+            "Website Carbon Calculator (g)": "NaN",
+            "Size (MB)": 3.2,
+            "Cost to View ($)": "$0.0213"
+        },
+        {
+            "Title": "<a href=\"http://inews.co.uk/\">i</a>",
+            "Circulation": "217182",
+            "Pagespeed Insights (Mobile)": "38",
+            "Pagespeed Insights (Desktop)": "61",
+            "Pingdom Tools": 62,
+            "Website Carbon Calculator (g)": "1.66",
+            "Size (MB)": 2.2,
+            "Cost to View ($)": "$0.0147"
+        },
+        {
+            "Title": "<a href=\"https://www.ft.com/\">Financial Times</a>",
+            "Circulation": "157982",
+            "Pagespeed Insights (Mobile)": "21",
+            "Pagespeed Insights (Desktop)": "32",
+            "Pingdom Tools": 67,
+            "Website Carbon Calculator (g)": "1.00",
+            "Size (MB)": 1.7,
+            "Cost to View ($)": "$0.0113"
+        },
+        {
+            "Title": "<a href=\"https://theguardian.com/\">The Guardian</a>",
+            "Circulation": "132341",
+            "Pagespeed Insights (Mobile)": "35",
+            "Pagespeed Insights (Desktop)": "68",
+            "Pingdom Tools": 61,
+            "Website Carbon Calculator (g)": "1.63",
+            "Size (MB)": 3.3,
+            "Cost to View ($)": "$0.0220"
+        },
+        {
+            "Title": "<a href=\"http://www.dailyrecord.co.uk/\">Daily Record</a>",
+            "Circulation": "104343",
+            "Pagespeed Insights (Mobile)": "28",
+            "Pagespeed Insights (Desktop)": "84",
+            "Pingdom Tools": 66,
+            "Website Carbon Calculator (g)": "NaN",
+            "Size (MB)": 2.1,
+            "Cost to View ($)": "$0.0140"
+        },
+        {
+            "Title": "<a href=\"http://www.cityam.com/\">City A.M.</a>",
+            "Circulation": "85521",
+            "Pagespeed Insights (Mobile)": "32",
+            "Pagespeed Insights (Desktop)": "76",
+            "Pingdom Tools": 70,
+            "Website Carbon Calculator (g)": "1.75",
+            "Size (MB)": 1.6,
+            "Cost to View ($)": "$0.0107"
+        },
+        {
+            "Title": "<a href=\"https://www.independent.co.uk/\">The Independent</a>",
+            "Circulation": "N/A",
+            "Pagespeed Insights (Mobile)": "23",
+            "Pagespeed Insights (Desktop)": "58",
+            "Pingdom Tools": 63,
+            "Website Carbon Calculator (g)": "NaN",
+            "Size (MB)": 4.1,
+            "Cost to View ($)": "$0.0273"
+        },
+        {
+            "Title": "<a href=\"https://www.telegraph.co.uk/\">The Daily Telegraph</a>",
+            "Circulation": "N/A",
+            "Pagespeed Insights (Mobile)": "37",
+            "Pagespeed Insights (Desktop)": "71",
+            "Pingdom Tools": 64,
+            "Website Carbon Calculator (g)": "NaN",
+            "Size (MB)": 2.9,
+            "Cost to View ($)": "$0.0193"
+        },
+        {
+            "Title": "<a href=\"https://www.bbc.com/news\">BBC News</a>",
+            "Circulation": "N/A",
+            "Pagespeed Insights (Mobile)": "84",
+            "Pagespeed Insights (Desktop)": "100",
+            "Pingdom Tools": 82,
+            "Website Carbon Calculator (g)": "0.51",
+            "Size (MB)": 2.2,
+            "Cost to View ($)": "$0.0147"
+        },
+        {
+            "Title": "<a href=\"https://pinopticon.net/\">Pinopticon.net</a>",
+            "Circulation": "N/A",
+            "Pagespeed Insights (Mobile)": "99",
+            "Pagespeed Insights (Desktop)": "100",
+            "Pingdom Tools": 98,
+            "Website Carbon Calculator (g)": "0.14",
+            "Size (MB)": 0.17,
+            "Cost to View ($)": "$0.0011"
+        }
+    ],
+    "good": {
+        "Pagespeed Insights (Mobile)": "46",
+        "Pagespeed Insights (Desktop)": "95",
+        "Pingdom Tools": 77,
+        "Website Carbon Calculator (g)": "1.00",
+        "Size (MB)": 1.60,
+        "Cost to View ($)": "$0.0107"
+    },
+    "bad": {
+        "Pagespeed Insights (Mobile)": "5",
+        "Pagespeed Insights (Desktop)": "24",
+        "Pingdom Tools": 60,
+        "Website Carbon Calculator (g)": "3.04",
+        "Size (MB)": 5.80,
+        "Cost to View ($)": "$0.0386"
+    }
+}

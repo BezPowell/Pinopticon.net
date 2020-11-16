@@ -1,0 +1,46 @@
+{% set data = load_data(path=path) -%}
+<table class="responsive-table">
+    {% if data.caption %}
+    <caption>{{ data.caption }}</caption>
+    {% endif %}
+    {% if data.header %}
+    <thead>
+        {% for row in data.header %}
+            <tr>
+                {% for key, value in row %}
+                <th scope="col" colspan="{{ value }}">{{ key | safe }}</th>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </thead>
+    {% endif %}
+    <tbody>
+        {% for row in data.body %}
+            <tr>
+                {% for key, value in row%}
+                    {% if loop.first %}
+                        <th scope="row">{{ value | safe }}</th>
+                    {% else %}
+                        {% if data.good[key] and data.good[key] == value %}
+                            {% set class = "good" %}
+                        {% elif data.bad[key] and data.bad[key] == value %}
+                            {% set class = "bad" %}
+                        {% else %}
+                            {% set class = "" %}
+                        {% endif %}
+                        <td data-title="{{ key }}" class="{{ class }}">{{ value | safe }}</td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+    {% if data.footer %}
+    <tfoot>
+        <tr>
+            {% for item in data.footer %}
+             <th scope="col">{{ item }}</th>
+             {% endfor %}
+        </tr>
+    </tfoot>
+    {% endif %}
+</table>

@@ -1,12 +1,16 @@
 table {
   table-layout: fixed;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top: 1px solid;
+  border-left: 1px solid;
 }
 
 th, td {
   padding: $base-line-height / 2;
   line-height: calc(#{$base-line-height} - 1px);
-  border: 1px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
 }
 
 th {

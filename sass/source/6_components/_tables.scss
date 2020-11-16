@@ -1,0 +1,55 @@
+.responsive-table {
+    column-span: all;
+    max-width: 100%;
+    margin: $base-line-height 0;
+
+    @media screen and (max-width: 1023px) {
+        display: block;
+        border-top: none;
+        border-left: none;
+        margin: 0;
+
+        & thead {
+            left: -9999px;
+            position: absolute;
+            visibility: hidden;
+        }
+
+        & tbody,
+        & tr {
+            display: block;
+            width: 100%;
+            margin: $base-line-height 0;
+        }
+
+        & tr {
+            border-top: 1px solid;
+            border-left: 1px solid;
+        }
+
+        & td,
+        & th {
+            display: block;
+
+            &::before {
+                content: attr(data-title);
+                display: block;
+                color: var(--colour-main);
+            }
+        }
+
+        & td.good::before,
+        & th.good::before,
+        & td.bad::before,
+        & th.bad::before {
+            color: var(--colour-background);
+        }
+    }
+
+    thead tr:last-child th {
+        position: sticky;
+        top: 0;
+
+        background-color: var(--colour-background);
+    }
+}
