@@ -1,0 +1,26 @@
+{
+    "items": [
+        {
+            "name": "Building Websites for Beginners",
+            "description": "A creative commons book aiming to provide an gentle introduction to building websites for complete beginners.",
+            "homepage_url": "https://bezpowell.github.io/building_websites_for_beginners/",
+            "repository_url": "https://github.com/BezPowell/building_websites_for_beginners"
+        },
+        {
+            "name": "Better Web Alliance",
+            "description": "A voluntary collective of websites and web developers aiming to make the world wide web a better place by putting users first.",
+            "homepage_url": "https://www.better-web-alliance.net/",
+            "repository_url": "https://github.com/BezPowell/better-web-alliance"
+        },
+        {
+            "name": "ccolour-juicer",
+            "description": "A simple cli utility to print out a list of unique colours in a given css file.",
+            "repository_url": "https://github.com/BezPowell/ccolour-juicer"
+        },
+        {
+            "name": "blitz-path",
+            "description": "Rust implementations of the A* and JPS pathfinding algorithms. Useful for games.",
+            "repository_url": "https://github.com/BezPowell/blitz-path"
+        }
+    ]
+}

@@ -10,7 +10,7 @@
     {% endfor %}
 
     {# generate links for pages #}
-    {% for item in root.pages | reverse %}
+    {% for item in root.pages | sort(attribute="title") | reverse %}
       {% if item.extra.exclude_nav %}{% continue %}{% endif %}
       {{ macros::nav_link(url=item.permalink, name=item.title) }}
     {% endfor %}

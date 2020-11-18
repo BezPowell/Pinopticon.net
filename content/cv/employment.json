@@ -1,0 +1,48 @@
+{
+    "header": [
+        {
+            "Title": 1,
+            "Employer": 1,
+            "Description": 1,
+            "Dates": 1
+        }
+    ],
+    "body": [
+        {
+            "Title": "Web Developer",
+            "Employer": "V8Media",
+            "Description": "<p>Full stack web development mainly specialising in front-end, but also extending to back-end and dev-ops roles where required. I worked as the companies' only front-end dev, building websites in Magento, Wordpress, Umbraco and occasionally a little Drupal.</p><p>I also worked on back-end logic extensively in Wordpress and Magento and also assisted in the administration of Linux servers (mainly Debian, but a few Centos), Windows servers and the setup and maintenance of company machines.</p>",
+            "Dates": "2017 - 2020"
+        },
+        {
+            "Title": "Store Assistant",
+            "Employer": "Hifi Gear",
+            "Description": "<p>Serving customers and setting up demos. Helping to maintain the company website, uploading products and modifying prices etc. Packaging orders for dispatch and other admin tasks.</p>",
+            "Dates": "2017"
+        },
+        {
+            "Title": "Web Developer (Work Experience)",
+            "Employer": "V8Media",
+            "Description": "<p>Basic PHP development in Wordpress and Magento. Including developing logic for contact forms, theme creation and debugging.</p>",
+            "Dates": "2017"
+        },
+        {
+            "Title": "KnowHow Colleague (Temporary)",
+            "Employer": "Currys PCWorld",
+            "Description": "<p>Customer service role. Diagnosing computer faults and performing basic software setups & repairs. Resolving any customer issues such as failed deliveries or misrepresented sales. Processing returns and exchanges.</p>",
+            "Dates": "2016 - 2017"
+        },
+        {
+            "Title": "Secretary",
+            "Employer": "Spring Greens Fair",
+            "Description": "<p>Voluntary role. Administering the societies affairs, including; Organising and publicising details of society meetings, minutes, processing  requests for membership, and submitting the annual return to the FCA.</p><p>Included greatly simplifying the societies' rules.</p>",
+            "Dates": "2015 - 2019"
+        },
+        {
+            "Title": "Webmaster",
+            "Employer": "Spring Greens Fair",
+            "Description": "<p>Voluntary role. Building and maintaining the societies’ wordpress website. Uploading details of upcoming fairs and writing summaries of past events.</p>",
+            "Dates": "2014 - 2020"
+        }
+    ]
+}

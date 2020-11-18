@@ -1,0 +1,41 @@
+{% set data = load_data(path=path) -%}
+<ul class="gallery gallery-large">
+    {% for item in data.items %}
+        {% if item.name %}
+            {% set name = item.name %}
+        {% endif %}
+
+        {# OVERRIDES: If specified in the config file, the above can be rewritten. #}
+        {% if item.repository_url %}   {% set repository_url = item.repository_url %}         {% endif %}
+        {% if item.homepage_url %}     {% set homepage_url = item.homepage_url %}             {% endif %}
+        {% if item.description %}      {% set description = item.description %}               {% endif %}
+
+        {# Simple heuristic for picking the 'main' URL for an entry - might need a way of overriding #}
+        {% if homepage_url %}
+            {% set primary_url = homepage_url %}
+        {% elif repository_url %}
+            {% set primary_url = repository_url %}
+        {% endif %}
+
+        <li class="gallery-item card">     
+            <h3 class="item-heading">
+                {% if primary_url %}
+                    <a href="{{ primary_url }}">{{ name }}</a>
+                {% else %}
+                    {{ name }}
+                {% endif %}
+            </h3>
+
+            <div class="meta">
+                {% if homepage_url %}
+                    <a href="{{ homepage_url }}"><span class="screen-reader-text">{{ name }}</span> Homepage</a>
+                {% endif %}
+                {% if repository_url %}
+                    <a href="{{ repository_url }}"><span class="screen-reader-text">{{ name }}</span> Repository</a>
+                {% endif %}
+            </div>
+
+            <p>{{ description }}</p>
+        </li>
+    {% endfor %}
+</ul>

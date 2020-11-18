@@ -39,7 +39,7 @@ The results are detailed in the table below. I have included BBC News and this w
 
 Fields marked NaN are where the tool was unable to get a result; from experience this is generally where the test has timed out before it can return a result and an indication of extremely low performance.
 
-{{ table(path="content/blog/2020-11-13-carbon-and-pagespeed-better-web-edition/results.json") }}
+{{ table(path="content/blog/2020-11-13-carbon-and-pagespeed-better-web-edition/results.json", responsive=true) }}
 
 <div class="table-wrapper">
     <table>
@@ -96,7 +96,7 @@ Fields marked NaN are where the tool was unable to get a result; from experience
                 <td class="bad">+1.1</td>
             </tr>
             <tr>
-                <th scope="row"><a href="https://www.thetimes.co.uk/">The Times/a></th>
+                <th scope="row"><a href="https://www.thetimes.co.uk/">The Times</a></th>
                 <td>NaN</td>
                 <td>NaN</td>
                 <td class="good">-0.63</td>

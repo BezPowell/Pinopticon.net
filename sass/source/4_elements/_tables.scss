@@ -6,7 +6,8 @@ table {
   border-left: 1px solid;
 }
 
-th, td {
+th,
+td {
   padding: $base-line-height / 2;
   line-height: calc(#{$base-line-height} - 1px);
   border-bottom: 1px solid;
@@ -18,13 +19,17 @@ th {
 }
 
 tbody tr:first-of-type {
-  th, td {
+
+  th,
+  td {
     padding-top: calc(#{$base-line-height / 2} - 1px);
   }
 }
 
 tbody tr:last-of-type {
-  th, td {
+
+  th,
+  td {
     padding-bottom: calc(#{$base-line-height / 2} - 1px);
   }
 }
@@ -39,9 +44,10 @@ td.bad {
   background-color: var(--colour-main);
 }
 
-.table-wrapper {
-  margin: $base-line-height 0;
+td p:first-child {
+  margin-top: 0;
+}
 
-  overflow-x: auto;
-  column-span: all;
+td p:last-child {
+  margin-bottom: 0;
 }

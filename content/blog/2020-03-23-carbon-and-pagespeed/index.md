@@ -36,7 +36,7 @@ The results are detailed in the table below. I have included BBC News and this w
 
 Fields marked NaN are where the tool was unable to get a result; from experience this is generally where the test has timed out before it can return a result and an indication of extremely low performance.
 
-{{ table(path="content/blog/2020-03-23-carbon-and-pagespeed/results.json") }}
+{{ table(path="content/blog/2020-03-23-carbon-and-pagespeed/results.json", responsive=true) }}
 <figure>
     <img src="News_Carbon_01.svg" alt="Visual representation of data from the table" />
 </figure>

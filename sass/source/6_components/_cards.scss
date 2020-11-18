@@ -1,0 +1,15 @@
+.card {
+    padding: calc(#{$base-line-height / 2} - 1px);
+    border: 1px solid;
+
+    box-shadow: 3px 3px 15px -6px var(--colour-text);
+}
+
+.meta-count {
+    @include type-setting(2);
+    font-weight: 600;
+}
+
+.card .item-heading {
+    margin: 0;
+}
