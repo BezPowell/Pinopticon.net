@@ -2,9 +2,9 @@
 title = "CV"
 date = 2020-11-18
 
-# Custom data
-[extra]
-banner = "/img/banners/stairwell_banner.jpg"
+[extra.banner]
+landscape = "/img/banners/cv_banner__landscape.jpg"
+portrait = "/img/banners/cv_banner__portrait.jpg"
 +++
 ## Some of my current projects
 {{ project_cards(path="content/cv/projects.json") }}

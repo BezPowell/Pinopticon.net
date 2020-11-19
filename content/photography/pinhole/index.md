@@ -2,10 +2,8 @@
 title = "Pinhole"
 date = 2019-03-13
 
-# Custom data
-[extra]
-author = "Berwyn"
-banner = "/img/banners/pinhole_banner.jpg"
+[extra.banner]
+landscape = "/img/banners/pinhole_banner.jpg"
 [extra.assets]
 high_res001_clean = {alt = "Dark tree trunks silhouetted against bright sunlight."}
 high_res2001_clean = {alt = "Plant pots with lables."}

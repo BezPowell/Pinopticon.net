@@ -2,10 +2,8 @@
 title = "Unnatural Landscapes"
 date = 2019-03-10
 
-# Custom data
-[extra]
-author = "Berwyn"
-banner = "/img/banners/banner_trees.jpg"
+[extra.banner]
+landscape = "/img/banners/banner_trees.jpg"
 [extra.assets]
 scan_150606010 = {alt="Track road winding uphill through pine trees."}
 scan_150606020 = {alt="Bench between two conifers."}

@@ -5,7 +5,7 @@
 
   <ul class="gallery">
     {% for post in section.pages | sort(attribute="date") | reverse %}
-    {% set image = "../static/" ~ post.extra.banner %}
+    {% set image = "../static/" ~ post.extra.banner.landscape %}
       <li class="gallery-item">
         <figure>
           <a href="{{ post.permalink }}">

@@ -8,7 +8,7 @@ categories = ["Web"]
 
 # Custom data
 [extra]
-banner = "/img/banners/stairwell_banner.jpg"
+landscape = "/img/banners/stairwell_banner.jpg"
 +++
 <div class="text-block">
 

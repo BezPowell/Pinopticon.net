@@ -2,10 +2,8 @@
 title = "Philosophy"
 date = 2019-03-09
 
-# Custom data
-[extra]
-author = "Berwyn"
-banner = "/img/banners/berry_banner.jpg"
+[extra.banner]
+landscape = "/img/banners/berry_banner.jpg"
 +++
 <div class="text-block">
   <p>

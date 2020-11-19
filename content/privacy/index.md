@@ -5,7 +5,7 @@ date = 2020-04-08
 # Custom data
 [extra]
 author = "Berwyn"
-banner = "/img/banners/stairwell_banner.jpg"
+landscape = "/img/banners/stairwell_banner.jpg"
 exclude_nav = true
 footer_menu = true
 +++
