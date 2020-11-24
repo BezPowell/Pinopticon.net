@@ -3,7 +3,8 @@ title = "Unnatural Landscapes"
 date = 2019-03-10
 
 [extra.banner]
-landscape = "/img/banners/banner_trees.jpg"
+landscape = "/img/banners/banner_trees_landscape.jpg"
+portrait = "/img/banners/banner_trees_portrait.jpg"
 [extra.assets]
 scan_150606010 = {alt="Track road winding uphill through pine trees."}
 scan_150606020 = {alt="Bench between two conifers."}

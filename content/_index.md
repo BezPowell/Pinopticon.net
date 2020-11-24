@@ -4,7 +4,8 @@ description = "Berwyn Powell's personal website. Featuring Photography, Philosop
 date = 2019-03-09
 
 [extra.banner]
-landscape = "/img/banners/banner_trees.jpg"
+landscape = "/img/banners/banner_trees_landscape.jpg"
+portrait = "/img/banners/banner_trees_portrait.jpg"
 +++
 <div class="text-block">
 

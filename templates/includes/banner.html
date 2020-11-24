@@ -11,25 +11,30 @@
       {% break %}
     {% endif %}
   {% endfor %}
+{% else %}
+  {% set sec = get_section(path="_index.md", metadata_only=true) %}
+  {% if sec.extra.banner %}
+    {% set_global banner = sec.extra.banner %}
+  {% endif %}
 {% endif %}
 {# if still nothing was found use default #}
-{% set landscape = banner.landscape | default(value="/img/banners/banner_trees.jpg") %}
+{% set landscape = banner.landscape | default(value="/img/banners/banner_trees_landscape.jpg") %}
 {% set portrait = banner.portrait | default(value=landscape) %}
 {% set landscape = "../static" ~ landscape %}
 {% set portrait = "../static" ~ portrait %}
 
 <picture class="banner">
   <source media="(orientation:portrait)" srcset="
-    {{ resize_image(path=portrait, width=1440, height=2560) }} 1440w,
-    {{ resize_image(path=portrait, width=1080, height=1920) }} 1080w,
-    {{ resize_image(path=portrait, width=720, height=1280) }} 720w,
-    {{ resize_image(path=portrait, width=360, height=640) }} 360w" sizes="100vw" />
+    {{ resize_image(path=portrait, width=1440, height=2560, quality=100) }} 1440w,
+    {{ resize_image(path=portrait, width=1080, height=1920, quality=100) }} 1080w,
+    {{ resize_image(path=portrait, width=720, height=1280, quality=100) }} 720w,
+    {{ resize_image(path=portrait, width=360, height=640, quality=100) }} 360w" sizes="100vw" />
 
   <source media="(orientation:landscape)" srcset="
-    {{ resize_image(path=landscape, width=2560, height=1440) }} 2560w,
-    {{ resize_image(path=landscape, width=1920, height=1080) }} 1920w,
-    {{ resize_image(path=landscape, width=1280, height=720) }} 1280w,
-    {{ resize_image(path=landscape, width=640, height=360) }} 640w" sizes="100vw" />
+    {{ resize_image(path=landscape, width=2560, height=1440, quality=100) }} 2560w,
+    {{ resize_image(path=landscape, width=1920, height=1080, quality=100) }} 1920w,
+    {{ resize_image(path=landscape, width=1280, height=720, quality=100) }} 1280w,
+    {{ resize_image(path=landscape, width=640, height=360, quality=100) }} 640w" sizes="100vw" />
 
-  <img src="{{ resize_image(path=landscape, width=1920, height=1080) }}" alt="" loading="eager" />
+  <img src="{{ resize_image(path=landscape, width=1920, height=1080, quality=100) }}" alt="" loading="eager" />
 </picture>
