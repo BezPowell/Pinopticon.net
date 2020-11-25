@@ -1,6 +1,8 @@
 .site-navigation {
     --colour-text: var(--colour-main);
 
+    @include type-setting(-1);
+
     background-color: var(--colour-background_trans);
     color: var(--colour-text);
 
@@ -41,7 +43,8 @@
     @include position($left: 50%, $bottom: $base-line-height);
     transform: translateX(-50%);
 
-    font-size: 3rem;
+    font-family: $font_family_heading;
+    font-size: 5rem;
     line-height: 1;
 
     z-index: 2;
