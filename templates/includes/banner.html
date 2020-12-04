@@ -45,5 +45,6 @@
     " sizes="100vw" />
 
   {#- Jpeg fallback -#}
-  <img src="{{ resize_image(path=landscape, width=1920, height=1080, quality=100) }}" alt="" loading="eager" />
+  {% set fallback = sizes | last %}
+  <img src="{{ resize_image(path=landscape, width=fallback.width, height=fallback.height, quality=100) }}" width="{{ fallback.width }}" height="{{ fallback.height }}" alt="" loading="eager" />
 </picture>
