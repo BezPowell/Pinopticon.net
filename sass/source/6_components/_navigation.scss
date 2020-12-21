@@ -42,26 +42,22 @@
 .skip-content {
     @include position($left: 50%, $bottom: $base-line-height);
     @include displayFlex($flow: column, $align: center);
-    transform: translateX(-50%);
 
+    transform: translateX(-50%);
     text-decoration: none;
 
     z-index: 2;
 
-    @media screen and (min-width: $breakpoint-large) {
-        @include type-setting(2);
-    }
-
     &::before {
         content: '↓';
-        display: block;
-        font-family: $font_family_heading;
         font-size: 5rem;
         line-height: 1;
     }
 
     span {
         @media screen and (min-width: $breakpoint-large) {
+            @include type-setting(2);
+            
             background-color: var(--colour-background_semi-trans);
             padding: $base-line-height /4 $base-line-height / 2;
             border-radius: 3px;
