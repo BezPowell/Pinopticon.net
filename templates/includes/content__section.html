@@ -21,7 +21,7 @@
       {% if post.extra.excerpt or post.description %}
       <div class="excerpt">
         <p>{{ post.extra.excerpt | default(value=post.description) | safe }}</p>
-        <p><a href="{{ post.permalink }}" aria-describedby="post-{{ loop.index0}}">Continue Reading</a></p>
+        <p><a href="{{ post.permalink }}">Continue Reading <span class="screen-reader-text">{{ post.title }}</span></a></p>
       </div>
       {% endif %}
     </article>
