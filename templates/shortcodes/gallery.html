@@ -1,3 +1,6 @@
+{# Load sizes from json #}
+{% set sizes = load_data(path="templates/shortcodes/gallery_sizes.json", format="json") %}
+
 <ul class="gallery jsLightbox">
   {% for asset in page.assets %}
     {% if asset is matching("[.](jpg|png)$") %}
@@ -9,14 +12,19 @@
       <li class="gallery-item">
         <figure>
           <a href="{{ get_url(path=asset) }}">
-            <img src="{{ resize_image(path=asset, width=900, height=600) }}" srcset="{{ resize_image(path=asset, width=1350, height=900) }}  1350w,
-                  {{ resize_image(path=asset, width=900, height=600) }} 900w,
-                  {{ resize_image(path=asset, width=450, height=300) }}  450w"
-              sizes="(min-width: 1200px) 25vw, (min-width: 992px) 33.3vw, (min-width: 768px) 50vw, 100vw"
-              alt="{{ alt }}"
-              width="450"
-              height="300"
-              loading="lazy" />
+            <picture>
+              {#- Jpeg srcset -#}
+              <source type="image/jpeg" srcset="
+                {%- for size in sizes %}
+                  {{- resize_image(path=asset, width=size.width, height=size.height) }} {{ size.width }}w
+                  {%- if not loop.last %}, {% endif -%}
+                {% endfor -%}
+                " sizes="(min-width: 1200px) 25vw, (min-width: 992px) 33.3vw, (min-width: 768px) 50vw, 100vw" />
+
+              {#- Jpeg fallback -#}
+              {% set fallback = sizes | last %}
+              <img src="{{ resize_image(path=asset, width=fallback.width, height=fallback.height) }}" alt="{{ alt }}" width="{{ fallback.width }}" height="{{ fallback.height }}" loading="lazy" />
+            </picture>
           </a>
           {% if page.extra.assets[filename].caption %}
             <figcaption>
