@@ -34,7 +34,7 @@
       {{- resize_image(path=portrait, width=size.height, height=size.width, quality=100) }} {{ size.height }}w
       {%- if not loop.last %}, {% endif -%}
     {% endfor -%}
-    " sizes="100vw" />
+    " sizes="(min-width: 992px) 100vw, 50vw" />
 
   {#- Jpeg landscape -#}
   <source media="(orientation:landscape)" type="image/jpeg" srcset="
@@ -42,7 +42,7 @@
       {{- resize_image(path=landscape, width=size.width, height=size.height, quality=100) }} {{ size.width }}w
       {%- if not loop.last %}, {% endif -%}
     {% endfor -%}
-    " sizes="100vw" />
+    " sizes="(min-width: 992px) 100vw, 50vw" />
 
   {#- Jpeg fallback -#}
   {% set fallback = sizes | last %}
