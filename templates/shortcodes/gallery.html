@@ -19,7 +19,7 @@
                   {{- resize_image(path=asset, width=size.width, height=size.height) }} {{ size.width }}w
                   {%- if not loop.last %}, {% endif -%}
                 {% endfor -%}
-                " sizes="(min-width: 1200px) 25vw, (min-width: 992px) 33.3vw, (min-width: 768px) 50vw, 100vw" />
+                " sizes="(min-width: 1200px) 350px, (min-width: 992px) 33.3vw, (min-width: 768px) 50vw, 100vw" />
 
               {#- Jpeg fallback -#}
               {% set fallback = sizes | last %}
