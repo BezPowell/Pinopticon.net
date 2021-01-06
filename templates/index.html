@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="{{ get_url(path='css/print.css') }}" media="print" />
     <link rel="icon" type="image/svg+xml" href="{{ get_url(path='img/favicon.svg') }}">
 
+    <script type="module" src="{{ get_url(path='js/site.js') }}"></script>
+
     {% if this.title %}
       <title>{{ this.title }}{% if config.title %} | {{ config.title }}{% endif %}</title>
     {% elif config.title %}
@@ -59,6 +61,5 @@
     {% block footer %}
       {% include "includes/footer.html" %}
     {% endblock footer %}
-    <script type="module" src="{{ get_url(path='js/site.js') }}"></script>
   </body>
 </html>
