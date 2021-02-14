@@ -31,7 +31,7 @@
   {#- Jpeg portrait -#}
   <source media="(orientation:portrait)" type="image/jpeg" srcset="
     {%- for size in sizes %}
-      {{- resize_image(path=portrait, width=size.height, height=size.width, quality=100) }} {{ size.height }}w
+      {{- resize_image(path=portrait, width=size.height, height=size.width) }} {{ size.height }}w
       {%- if not loop.last %}, {% endif -%}
     {% endfor -%}
     " sizes="(min-width: 992px) 100vw, 50vw" />
@@ -39,12 +39,12 @@
   {#- Jpeg landscape -#}
   <source media="(orientation:landscape)" type="image/jpeg" srcset="
     {%- for size in sizes %}
-      {{- resize_image(path=landscape, width=size.width, height=size.height, quality=100) }} {{ size.width }}w
+      {{- resize_image(path=landscape, width=size.width, height=size.height) }} {{ size.width }}w
       {%- if not loop.last %}, {% endif -%}
     {% endfor -%}
     " sizes="(min-width: 992px) 100vw, 50vw" />
 
   {#- Jpeg fallback -#}
   {% set fallback = sizes | last %}
-  <img src="{{ resize_image(path=landscape, width=fallback.width, height=fallback.height, quality=100) }}" width="{{ fallback.width }}" height="{{ fallback.height }}" alt="" loading="eager" />
+  <img src="{{ resize_image(path=landscape, width=fallback.width, height=fallback.height) }}" width="{{ fallback.width }}" height="{{ fallback.height }}" alt="" loading="eager" />
 </picture>
