@@ -28,7 +28,7 @@ module.exports = {
       });
 
       const optimizedFiles = await imagemin([glob], {
-        plugins: [gifsicle(), optipng(), pngquant(), svgo(), jpegtran()]
+        plugins: [gifsicle(), optipng(), pngquant(), svgo(), jpegrecompress({quality: "low"})]
       });
 
       optimizedFiles.map(file => {
