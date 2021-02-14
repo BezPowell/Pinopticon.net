@@ -9,10 +9,10 @@
       <li class="gallery-item">
         <figure>
           <a href="{{ post.permalink }}">
-            <img src="{{ resize_image(path=image, width=900, height=600) }}"
-            srcset="{{ resize_image(path=image, width=1350, height=900) }}  1350w,
-              {{ resize_image(path=image, width=900, height=600) }} 900w,
-              {{ resize_image(path=image, width=450, height=300) }}  450w"
+            <img src="{{ resize_image(path=image, width=900, height=600, quality=100) }}"
+            srcset="{{ resize_image(path=image, width=1350, height=900, quality=100) }}  1350w,
+              {{ resize_image(path=image, width=900, height=600, quality=100) }} 900w,
+              {{ resize_image(path=image, width=450, height=300, quality=100) }}  450w"
             sizes="(min-width: 1200px) 25vw, (min-width: 992px) 33.3vw, (min-width: 768px) 50vw, 100vw"
             alt="{{ post.title }}"
             width="450"

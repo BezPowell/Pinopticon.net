@@ -9,7 +9,7 @@ const gifsicle = require("imagemin-gifsicle");
 const optipng = require("imagemin-optipng");
 const pngquant = require("imagemin-pngquant");
 const svgo = require("imagemin-svgo");
-const jpegtran = require("imagemin-jpegtran");
+const jpegrecompress = require("imagemin-jpeg-recompress");
 
 module.exports = {
     onPostBuild: async config => {
@@ -28,7 +28,7 @@ module.exports = {
       });
 
       const optimizedFiles = await imagemin([glob], {
-        plugins: [gifsicle(), optipng(), pngquant(), svgo(), jpegtran({progressive:true})]
+        plugins: [gifsicle(), optipng(), pngquant(), svgo(), jpegtran()]
       });
 
       optimizedFiles.map(file => {

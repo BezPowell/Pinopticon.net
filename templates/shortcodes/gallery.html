@@ -16,14 +16,14 @@
               {#- Jpeg srcset -#}
               <source type="image/jpeg" srcset="
                 {%- for size in sizes %}
-                  {{- resize_image(path=asset, width=size.width, height=size.height) }} {{ size.width }}w
+                  {{- resize_image(path=asset, width=size.width, height=size.height, quality=100) }} {{ size.width }}w
                   {%- if not loop.last %}, {% endif -%}
                 {% endfor -%}
                 " sizes="(min-width: 1200px) 350px, (min-width: 992px) 33.3vw, (min-width: 768px) 50vw, 100vw" />
 
               {#- Jpeg fallback -#}
               {% set fallback = sizes | last %}
-              <img src="{{ resize_image(path=asset, width=fallback.width, height=fallback.height) }}" alt="{{ alt }}" width="{{ fallback.width }}" height="{{ fallback.height }}" loading="lazy" />
+              <img src="{{ resize_image(path=asset, width=fallback.width, height=fallback.height, quality=100) }}" alt="{{ alt }}" width="{{ fallback.width }}" height="{{ fallback.height }}" loading="lazy" />
             </picture>
           </a>
           {% if page.extra.assets[filename].caption %}
