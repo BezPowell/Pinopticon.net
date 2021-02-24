@@ -2,6 +2,7 @@
 {% set root = get_section(path="_index.md") %}
 <footer class="site-footer">
   <p>Pinopticon.net &#169;Berwyn Powell</p>
+  <div id="wcb" class="carbonbadge wcb-d"></div>
   <ul class="menu">
     {% for page_item in root.pages | reverse %}
       {% if page_item.extra.footer_menu %}
