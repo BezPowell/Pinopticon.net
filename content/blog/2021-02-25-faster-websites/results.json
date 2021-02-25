@@ -1,0 +1,97 @@
+{
+    "caption": "Carbon emissions and pagespeed in newspaper websites.",
+    "header": [
+        {
+            "Title": 1,
+            "Insights Mobile": 1,
+            "Carbon (g)": 1
+        }
+    ],
+    "body": [
+        {
+            "Site": "Metro",
+            "Insights Mobile": 28,
+            "Carbon": 1.88
+        },
+        {
+            "Site": "The Sun",
+            "Insights Mobile": 15,
+            "Carbon": 2.3
+        },
+        {
+            "Site": "Daily Mail",
+            "Insights Mobile": 12,
+            "Carbon": "NaN"
+        },
+        {
+            "Site": "Evening Standard",
+            "Insights Mobile": 21,
+            "Carbon": 2.58
+        },
+        {
+            "Site": "Daily Mirror",
+            "Insights Mobile": 11,
+            "Carbon": "NaN"
+        },
+        {
+            "Site": "The Times",
+            "Insights Mobile": 12,
+            "Carbon": 2.41
+        },
+        {
+            "Site": "Daily Express",
+            "Insights Mobile": 9,
+            "Carbon": 1.92
+        },
+        {
+            "Site": "Daily Star",
+            "Insights Mobile": 12,
+            "Carbon": 1.45
+        },
+        {
+            "Site": "i",
+            "Insights Mobile": 35,
+            "Carbon": 2.29
+        },
+        {
+            "Site": "Financial Times",
+            "Insights Mobile": 34,
+            "Carbon": 0.89
+        },
+        {
+            "Site": "The Guardian",
+            "Insights Mobile": 26,
+            "Carbon": 1.58
+        },
+        {
+            "Site": "Daily Record",
+            "Insights Mobile": 12,
+            "Carbon": 2.65
+        },
+        {
+            "Site": "City A.M.",
+            "Insights Mobile": 17,
+            "Carbon": "NaN"
+        },
+        {
+            "Site": "The Independent",
+            "Insights Mobile": 20,
+            "Carbon": "NaN"
+        },
+        {
+            "Site": "The Daily Telegraph",
+            "Insights Mobile": 18,
+            "Carbon": 1.43
+        },
+        {
+            "Site": "BBC News",
+            "Insights Mobile": 72,
+            "Carbon": 0.42
+        },
+        {
+            "Site": "Pinopticon.net",
+            "Insights Mobile": 95,
+            "Carbon": 0.31
+        }
+    ]
+}

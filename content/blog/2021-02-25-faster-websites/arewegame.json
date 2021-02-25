@@ -1,0 +1,27 @@
+{
+    "caption": "Before and after performance improvements.",
+    "header": [
+        {
+            "State": 1,
+            "Insights Mobile": 1,
+            "Carbon (g)": 1
+        }
+    ],
+    "body": [
+        {
+            "State": "Before",
+            "Pagespeed": 72,
+            "Carbon": 0.26
+        },
+        {
+            "State": "After",
+            "Pagespeed": 98,
+            "Carbon": 0.15
+        },
+        {
+            "State": "Percentage Change",
+            "Pagespeed": 36.11,
+            "Carbon": -42.31
+        }
+    ]
+}
