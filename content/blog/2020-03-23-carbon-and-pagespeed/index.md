@@ -10,8 +10,6 @@ categories = ["Web"]
 [extra]
 excerpt = "With many in the west currently self-isolating due to the ongoing COVID-19 pandemic, internet use is growing rapidly. In light of this strain on the internet, I decided it would be an interesting experiment to analyse the page load performance and carbon generated from viewing a common and seemingly simple form of site – newspaper websites."
 +++
-<div class="text-block">
-
 ## Preface
 With many in the west currently self-isolating due to the ongoing COVID-19 pandemic, internet use is growing rapidly. A high-profile change recently has been many video streaming services [reducing the bandwidth of the videos they offer](https://www.theguardian.com/media/2020/mar/19/netflix-to-slow-europe-transmissions-to-avoid-broadband-overload) in an attempt to relieve some of the increasing stress on the network. The internet (and video streaming services especially) have come under scrutiny for the amount of electricity that running the supporting infrastructure creates and the resultant environmental impact from the carbon emissions that this produces. Thankfully, though, it looks like that with the reduced emissions from travel <a href="https://www.theguardian.com/world/2020/mar/10/coronavirus-could-cause-fall-in-global-co2-emissions">it is possible this will lead to the first fall in global emissions since the 2008-09 financial crisis</a>.
 
@@ -56,5 +54,3 @@ While this is not intended to be an in-depth look at the performance of news web
 In addition to this it should also be apparent the poor state of performance optimisation present on the websites tested. All of the newspaper website tested on pagespeed insights have a score below 50 for mobile and only a single one is considered fast on desktop. Furthermore, none of them have a total page size below 1.5MB which especially on mobile networks can contribute to poor user experience.
 
 The most positive environmental change here would be for readers of The Times to move to BBC News, but regardless of which newspaper you read, do consider changing what source you use to stay up to date – it could well make a difference to both the planet, and your patience.
-
-</div>

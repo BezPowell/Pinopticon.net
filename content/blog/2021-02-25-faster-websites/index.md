@@ -9,8 +9,6 @@ categories = ["Web"]
 [extra]
 excerpt = "Website pagespeed and carbon emissions are closely linked, and a change in one often improves the other."
 +++
-<div class="text-block">
-
 The last few years have brought a steady stream of environmental disasters that have been made many times more likely because of man-made climate change<sup id="a1">[1](#f1)</sup>, and we are all becoming increasingly aware of the lifestyle changes we need to make in order to ensure our species' future. One area where the environmental impact of our human activities can be less obvious, however, is in the digital realm. We have a tendency to think of things on the internet as not really being there as we cannot physically see them, but the infrastructure required to maintain the world wide web is vast. In order to view a web page, its content must be stored on a server somewhere. That data must then be transmitted from the server's physical location to the user's device, and the device must use that to render the page.
 
 ## Electricity
@@ -62,5 +60,3 @@ If you have found this article enlightening or infuriating please let me know. A
     <li id="f4"><a href="https://pinopticon.net/blog/carbon-and-pagespeed-better-web-edition/">Carbon and pagespeed in newspaper websites</a></li>
     <li id="f5">As reported by the <a href="https://www.websitecarbon.com/">Website Carbon Calculator</a></li>
 </ol>
-
-</div>

@@ -10,8 +10,6 @@ categories = ["Web"]
 [extra]
 excerpt = "A little over six months ago, right at the start of the coronavirus lockdown here in the UK, I performed an analysis of the page load performance and carbon generated from viewing various UK newspaper websites. Having just launched the Better Web Alliance, I decided to revisit the analysis, including the new Accessibility and Privacy metrics."
 +++
-<div class="text-block">
-
 ## Preface
 A little over six months ago, right at the start of the coronavirus lockdown here in the UK, I performed an analysis of the page load performance and carbon generated from viewing various UK newspaper websites. In the intervening time I have been giving a lot of thought to the actions that web developers (and website owners) can take to help make the world wide web a better place; and just under a month ago launched the [Better Web Alliance](https://www.better-web-alliance.net/) to try and bring attention to this topic.
 
@@ -203,5 +201,3 @@ Invasive tracking scripts and the sharing of visitor data with 3<sup>rd</sup> pa
 When considering the large number of tracking technologies used across the websites, the poor performance scores are perhaps less suprising, as these tend to have a large impact on performance. Total page weight is still very high, though, so this could only partially explain poor PageSpeed Insights scores.
 
 As with the previous analysis, it seems that your choice of online news outlet is about far more than preference for content, but should also take into account the nature of the delivery system as well.
-
-</div>

@@ -6,8 +6,6 @@ description = "I've just launched a new website hoping to raise awareness of the
 [taxonomies]
 categories = ["Web"]
 +++
-<div class="text-block">
-
 The nature of the web is changing. Total page weight is rapidly increasing. Images and videos are replacing text. Tracking scripts and analytics seem to be becoming increasingly common. Major data breaches exposing personal information of users are a regular occurrence. More and more sites seem to be hiding information behind pay walls.
 
 Some of the best content on the web, it is true, is created by people who can make a living out of it. However, if you look at a random selection of popular websites many of them seem to share some unfortunate features in common:
@@ -23,5 +21,3 @@ In light of this I have been brainstorming a set of 3 voluntary principles that 
 3. Make your content accessible for all.
 
 If you want to get involved, whether just signing up to follow the principles, or helping to raise awareness you can do so at the [better web alliance](https://www.better-web-alliance.net/) website. This project is still in the very early stages, but eventually it is hoped that it can provide useful resources for developers hoping to make the web a better place, such as links to tutorials and how to articles.
-
-</div>
