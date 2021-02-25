@@ -1,9 +1,16 @@
 {% set data = load_data(path=path) -%}
+{% if inline %}
+    {% set class = ["inline"] %}
+{% else %}
+    {% set class = [] %}
+{% endif %}
 {% if not responsive %}
-    <div class="table-wrapper">
+    <div class="table-wrapper {{ class | join(sep=" ") }}">
+{% else %}
+    {% set class = class | concat(with="responsive-table") %}
 {% endif %}
 
-    <table {% if responsive %}class="responsive-table"{% endif %}>
+    <table class="{{ class | join(sep=" ") }}">
         {% if data.caption %}
         <caption>{{ data.caption }}</caption>
         {% endif %}

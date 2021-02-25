@@ -9,6 +9,8 @@ categories = ["Web"]
 [extra]
 excerpt = "Website pagespeed and carbon emissions are closely linked, and a change in one often improves the other."
 +++
+<div class="text-block">
+
 The last few years have brought a steady stream of environmental disasters that have been made many times more likely because of man-made climate change<sup id="a1">[1](#f1)</sup>, and we are all becoming increasingly aware of the lifestyle changes we need to make in order to ensure our species' future. One area where the environmental impact of our human activities can be less obvious, however, is in the digital realm. We have a tendency to think of things on the internet as not really being there as we cannot physically see them, but the infrastructure required to maintain the world wide web is vast. In order to view a web page, its content must be stored on a server somewhere. That data must then be transmitted from the server's physical location to the user's device, and the device must use that to render the page.
 
 ## Electricity
@@ -28,11 +30,11 @@ While this relationship is all well and good in theory, it is always better to s
 
 Last year, I performed a basic analysis of several different metrics on the websites of some of the most popular British Newspapers<sup id="a4">[4](#f4)</sup>. Two of the metrics that I recorded were the Mobile Pagespeed Insights scores, and the Carbon Emissions<sup id="a5">[5](#f5)</sup>. Extracting those two metrics from the analysis we are left with the following data:
 
-{{ table(path="content/blog/2021-02-25-faster-websites/results.json", responsive=false) }}
+{{ table(path="content/blog/2021-02-25-faster-websites/results.json", inline=true) }}
 
 Which when plotted onto a scatter graph shows the following trend:
 
-<figure>
+<figure class="inline">
     <img src="Scatter.svg" alt="Scatter chart showing relationship between pagespeed and carbon emissions." />
 </figure>
 
@@ -41,7 +43,7 @@ Obviously, this is from a very small sample size (made even smaller by not being
 ### Measuring changes
 Another area that would help to support this theory would be comparing both scores after work to improve one or the other. One of my hobbies is programming games in the Rust Programming language, and one of the best sites providing resources for the Rust Gamedev community is <a href="https://arewegameyet.rs/">arewegameyet.rs</a>. While poking around on the website I noticed that - while their desktop performance was very good - the mobile performance had some room for improvement, and opened a pr with some changes to boost performance. As the site is generated via a <abbr title="Static Site Generator">SSG</abbr>, I was able to go back later and publish before and after versions for measurement of carbon emissions. The result of this comparison is below:
 
-{{ table(path="content/blog/2021-02-25-faster-websites/arewegame.json", responsive=false) }}
+{{ table(path="content/blog/2021-02-25-faster-websites/arewegame.json", inline=true) }}
 
 While working on the changes I was not measuring or accounting for carbon emissions, and all my improvements were aimed solely at increasing pageload performance. In spite of this, the carbon emissions also improved, with a very close percentage change (though negative as smaller carbon emissions are better).
 
@@ -60,3 +62,5 @@ If you have found this article enlightening or infuriating please let me know. A
     <li id="f4"><a href="https://pinopticon.net/blog/carbon-and-pagespeed-better-web-edition/">Carbon and pagespeed in newspaper websites</a></li>
     <li id="f5">As reported by the <a href="https://www.websitecarbon.com/">Website Carbon Calculator</a></li>
 </ol>
+
+</div>

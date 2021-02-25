@@ -26,6 +26,6 @@
   font-style: italic;
 }
 
-.inline {
+.inline, [class].inline {
   column-span: none;
 }
