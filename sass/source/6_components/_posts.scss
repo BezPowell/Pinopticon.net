@@ -29,3 +29,7 @@
 .inline, [class].inline {
   column-span: none;
 }
+
+.full-bleed {
+  column-span: all;
+}
