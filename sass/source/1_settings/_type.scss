@@ -5,6 +5,8 @@ $font-family_heading: "Liberation Mono", Cousine, "Courier New" , Courier, "Luci
 $base-font-size: 1rem;
 $base-line-height: $base-font-size * 1.5;
 
+$ideal-line-width: 100ch;
+
 $type-scale: (
   -2: (
     size:         0.8542rem,

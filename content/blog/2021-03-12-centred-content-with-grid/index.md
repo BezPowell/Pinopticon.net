@@ -5,12 +5,10 @@ description = "Centring content on desktop without media queries using css grid.
 [taxonomies]
 categories = ["Web"]
 +++
-<div class="full-bleed">
-
 An increasingly popular approach to laying out webpages is to restrict the width of the page content, and have it remain centred on wider screens. This way lines of text don't become too long for reading, and there is not too much whitespace at the page edges on smaller devices. Like anything in web development, there are several ways of implementing this, but most rely on media-queries and additional wrapping `div`s. With the widespread browser adoption of CSS Grid, however, I have been experimenting with a way of achieving this which does not rely on altering html structure or media-queries, and also allows some chosen elements to stretch to the full width of the device.
 
 ## What we're creating
-Before covering the specifics of implementation, we should look at a simple example of the layour we're trying to achieve. You've probably come across many websites that use this technique, but a screenshot of our example is below to clarify what we will be aiming for:
+Before covering the specifics of implementation, we should look at a simple example of the layout we're trying to achieve. You've probably come across many websites that use this technique, but a screenshot of our example is below to clarify what we will be aiming for:
 
 <figure>
     <img src="./layout.png" alt="Same page on mobile and desktop showing differences in content width" />
@@ -88,7 +86,7 @@ main {
 }
 ```
 
-If we were to refresh the page now, of course, grid's default layout rules will mean that it will try and lay out the `main` element's children in all of the columns; including the 2rem wide ones we added for padding. This will result overlapping elements and the general chaos illustrated in the below screenshot.
+If we were to refresh the page now, of course, grid's default layout rules will mean that it will try and lay out the `main` element's children in all of the columns; including the 2rem wide ones we added for padding. This will result in overlapping elements and the general chaos illustrated in the below screenshot.
 <figure>
     <img src="./grid.png" alt="Overlapping caused by text being fitted into small areas." />
 </figure>
@@ -121,7 +119,7 @@ main {
 }
 ```
 
-What we have done here is to replace the 2rem value for the outer grid columns with a `max` calculation. Max takes two values, seperated by commas, and uses whichever calculates as the higher. The right hand side calculation (`(100% - 80ch) / 2`) looks rather complex, so lets break to down. For the purposes of the example we will assume a screen width of 1200px:
+What we have done here is to replace the 2rem value for the outer grid columns with a `max` calculation. Max takes two values, seperated by commas, and uses whichever calculates as the higher. The right hand side calculation (`(100% - 80ch) / 2`) looks rather complex, so lets break it down. For the purposes of the example we will assume a screen width of 1200px:
 - The value of 100% refers to the total width of the element. In the case of our simple example that is the total-width of the screen, 1200px. So the calculation becomes `(1200px - 80ch) / 2`.
 - The value of 80ch is the maximum width we want the content to extend to. `ch` is the width of the number `0` in whichever font you are using, so can be used to set a width which is an approximate number of characters. In our case, by taking this away from 100%, we are saying that we want the side columns to be whatever is left of the screen after our maximum content width has been removed (1200px - 1006px in our example).
 - Finally the we divide this value by 2 as there are 2 outer columns (leaving each a computed value of 503.167px).
@@ -137,5 +135,3 @@ When we apply the above styling to our page it should now look like this:
 One advantage of this technique is that, because it does not use vw units, it will also work in cases where there are one or more sidebars and the `main` element does not use up all of the screen. The lack of a media query also means you can set the preferred content width once, and not have to worry about it if the page-layout changes in future.
 
 There are probably many other ways of achieving this, but hopefully it might help you in your own website layouts. If you have a better way of doing this please let me know as I'm always keen to improve and simplify my stylesheets.
-
-</div>

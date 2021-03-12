@@ -3,7 +3,7 @@
     {{ section.content | safe }}
   {% endif %}
 
-  <ul class="gallery">
+  <ul class="gallery full-bleed">
     {% for post in section.pages | sort(attribute="date") | reverse %}
     {% set image = "../static/" ~ post.extra.banner.landscape %}
       <li class="gallery-item">

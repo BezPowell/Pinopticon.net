@@ -13,6 +13,6 @@ I have read a lot about the sheer vastness of space in sci-fi novels and seen th
 
 The final image is displayed below. It’s an svg file to avoid destroying the internet with filesize and to allow you to zoom in if you find you’re having difficulty making out some of the planets (when rendered at 100% Mercury is less than half a pixel in diameter). I do advise using the arrow keys to scroll this one as I can not be held liable for any mice destroyed as a result of viewing the image.
 
-<figure>
+<figure class="full-bleed">
     <img src="sol.svg" alt="Visual representation of the planets in the solar system to scale." />
 </figure>

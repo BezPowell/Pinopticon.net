@@ -3,7 +3,7 @@
     {{ section.content | safe }}
   {% endif %}
   {% for post in paginator.pages %}
-    <article class="post">
+    <article>
       <header>
         <h2 class="post-title" id="post-{{ loop.index0}}"><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
         <p class="meta">

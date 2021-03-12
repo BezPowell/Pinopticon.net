@@ -1,7 +1,7 @@
 {# Load sizes from json #}
 {% set sizes = load_data(path="templates/shortcodes/gallery_sizes.json", format="json") %}
 
-<ul class="gallery jsLightbox">
+<ul class="gallery jsLightbox full-bleed">
   {% for asset in page.assets %}
     {% if asset is matching("[.](jpg|png)$") %}
       {% set filename = asset | split(pat="/") | last | split(pat=".") | first %}

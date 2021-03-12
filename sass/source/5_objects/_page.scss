@@ -10,41 +10,38 @@ body {
 body {
   display: grid;
 
-  grid-template-columns: minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2)) minmax(0, 1fr) minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2));
+  grid-template-columns: 1fr;
   grid-template-rows: 100vh auto 1fr auto;
   grid-template-areas:
-    "header header header"
-    ". breadcrumbs ."
-    ". main ."
-    "footer footer footer"
+    "header"
+    "breadcrumbs"
+    "main"
+    "footer"
   ;
-
-  column-gap: var(--site-padding);
 
   min-height: 100vh;
 }
 
 .post,
 .archive {
-  grid-template-columns: minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2)) minmax(0, 1fr) minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2));
   grid-template-rows: 100vh auto 1fr repeat(2, auto);
   grid-template-areas:
-    "header header header"
-    ". breadcrumbs ."
-    ". main ."
-    ". sidebar ."
-    "footer footer footer"
+    "header"
+    "breadcrumbs"
+    "main"
+    "sidebar"
+    "footer"
   ;
 
   column-gap: var(--site-padding);
 
   @media screen and (min-width: $breakpoint-large) {
     grid-template-areas:
-      "header header header header"
-      ". breadcrumbs . ."
-      ". main sidebar ."
-      "footer footer footer footer";
-    grid-template-columns: minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2)) minmax(0, 1fr) 40ch minmax(0, calc((100% - #{$breakpoint-xlarge}) / 2));
+      "header header"
+      "breadcrumbs ."
+      "main sidebar"
+      "footer footer";
+    grid-template-columns: 1fr 40ch;
     grid-template-rows: 100vh auto 1fr auto;
   }
 }
@@ -60,16 +57,35 @@ body {
 
 .breadcrumbs {
   grid-area: breadcrumbs;
+  padding: 0 m#{a}x(var(--site-padding), 50% - #{$ideal-line-width / 2});
+  ;
 }
 
 .site-content {
   grid-area: main;
   margin: 0 0 $base-line-height;
+  padding: 0 var(--site-padding);
+  display: grid;
+  grid-template-columns: m#{a}x(0px, 50% - #{$ideal-line-width / 2}) 1fr m#{a}x(0px, 50% - #{$ideal-line-width / 2});
+  grid-auto-rows: auto;
+
+  &>* {
+    grid-column: 2 / span 1;
+  }
+
+  &>.full-bleed {
+    grid-column: 1 / span all;
+  }
+}
+
+.no-layout {
+  display: contents;
 }
 
 .site-sidebar {
   grid-area: sidebar;
-  margin: $base-line-height 0;
+  margin: 0;
+  padding: 0 var(--site-padding);
 }
 
 .site-footer {
