@@ -4,7 +4,7 @@ const terser = require('terser');
 
 exports.optimize = async (path) => {
     const files = [];
-    const glob = `${path}/**/*.{js, mjs}`;
+    const glob = `${path}/**/*.{js,mjs}`;
     const paths = await globby(glob);
 
     // Record initial filesize.
