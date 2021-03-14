@@ -5,5 +5,4 @@ date = 2019-12-13
 [extra.banner]
 landscape = "/img/banners/stairwell_banner.jpg"
 +++
-## If you would like to get in touch please use the form below:
-{{ contact() }}
+You can get in touch with me via email at <a href="mailto:bez@pinopticon.net">bez@pinopticon.net</a>. You can also see all my open-source repositories on [https://github.com/BezPowell](GitHub), or read some of my posts on [https://dev.to/bezpowell](dev.to).
