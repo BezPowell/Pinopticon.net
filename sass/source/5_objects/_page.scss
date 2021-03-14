@@ -64,13 +64,14 @@ body {
 .site-content {
   grid-area: main;
   margin: 0 0 $base-line-height;
-  padding: 0 var(--site-padding);
+  padding: var(--site-padding) var(--site-padding) 0;
   display: grid;
   grid-template-columns: m#{a}x(0px, 50% - #{$ideal-line-width / 2}) 1fr m#{a}x(0px, 50% - #{$ideal-line-width / 2});
   grid-auto-rows: auto;
 
   &>* {
     grid-column: 2 / span 1;
+    margin-top: 0;
   }
 
   &>.full-bleed {
