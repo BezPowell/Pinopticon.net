@@ -1,0 +1,11 @@
+pre {
+    overflow-x: auto;
+    padding: calc(var(--site-padding) / 2);
+}
+
+pre,
+code {
+    background-color: var(--colour-background_contrast);
+    font-family: monospace;
+    color: var(--colour-main);
+}
