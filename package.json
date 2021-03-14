@@ -1,0 +1,17 @@
+{
+    "name": "pinopticon",
+    "scripts": {
+        "build": "zola build",
+        "postbuild": "node node/index.js"
+    },
+    "dependencies": {
+        "fs": "0.0.1-security",
+        "globby": "^11.0.2",
+        "imagemin-gifsicle": "^7.0.0",
+        "imagemin-jpeg-recompress": "^7.0.0",
+        "imagemin-optipng": "^8.0.0",
+        "imagemin-overwrite": "^7.0.1",
+        "imagemin-svgo": "^9.0.0",
+        "terser": "^5.6.0"
+    }
+}

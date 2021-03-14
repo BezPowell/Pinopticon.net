@@ -1,6 +1,0 @@
-[[plugins]]
-package = "@netlify/plugin-local-install-core"
-[[plugins]]
-package = "./netlify-plugin-image-optim"
-[[plugins]]
-package = "netlify-plugin-hashfiles"

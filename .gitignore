@@ -2,7 +2,3 @@
 /public
 /static/processed_images
 node_modules
-dist
-
-# Local Netlify folder
-.netlify
