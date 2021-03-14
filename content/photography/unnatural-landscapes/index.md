@@ -16,14 +16,8 @@ scan_150606007 = {alt="Lines of spruce trees receding into far distance with pat
 scan_150606015 = {alt="Curved plank bridge over pond in conifer forest with tree in foreground."}
 scan_150614010 = {alt="Water filled footprint in mud."}
 +++
-<div class="text-block">
-  <p>
-    This was one of my last projects while on the photography degree at Hereford College of Arts. I wanted to explore our often contradictory ideas about what is a &#8216;natural&#8217; landscape and how we commonly sculpt places to resemble natural environments.
-  </p>
+This was one of my last projects while on the photography degree at Hereford College of Arts. I wanted to explore our often contradictory ideas about what is a &#8216;natural&#8217; landscape and how we commonly sculpt places to resemble natural environments.
 
-  <p>
-    These photographs were all taken at some of the various Forestry Nature Trails and Walks in Carmarthenshire and Powys; seemingly natural, yet completely artificial.
-  </p>
-</div>
+These photographs were all taken at some of the various Forestry Nature Trails and Walks in Carmarthenshire and Powys; seemingly natural, yet completely artificial.
 
 {{ gallery() }}
